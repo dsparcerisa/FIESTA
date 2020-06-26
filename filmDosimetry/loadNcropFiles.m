@@ -1,6 +1,7 @@
-function I = loadNcropFiles(filePaths, nCrops)
+function [I, R] = loadNcropFiles(filePaths, nCrops)
 % Using imcrop and uiopen dialog box, opens a given number of files
     I = {};
+    R = {};
     N = numel(filePaths);
     
     for i=1:N
@@ -18,7 +19,8 @@ function I = loadNcropFiles(filePaths, nCrops)
         Npoints=nCrops(i);
         for j=1:Npoints
             figure(1);
-            I{(numel(I)+1)}=imcrop(fullImage);
+            [I{(numel(I)+1)}, R{(numel(R)+1)}]=imcrop(fullImage);
+            
             close(1);
         end
     end
