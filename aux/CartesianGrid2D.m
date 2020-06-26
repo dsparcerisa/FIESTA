@@ -236,9 +236,13 @@ classdef CartesianGrid2D < matlab.mixin.Copyable
             GI_Right = griddedInterpolant({CGRight.minX:CGRight.dx:CGRight.maxX, ...
                 CGRight.minY:CGRight.dy:CGRight.maxY},CGRight.data,'linear','none');
             
+            LVAL = GI_Left({Xpositions,Ypositions});
+            LVAL(isnan(LVAL)) = 0;
+            RVAL = GI_Right({Xpositions,Ypositions});
+            RVAL(isnan(RVAL)) = 0;
             NX = numel(Xpositions);
             NY = numel(Ypositions);
-            data = GI_Left({Xpositions,Ypositions}) + GI_Right({Xpositions,Ypositions});
+            data = LVAL + RVAL;
             
             Result = CartesianGrid2D(minX,maxX,minY,maxY,dx,dy,NX,NY,data);                 
             
