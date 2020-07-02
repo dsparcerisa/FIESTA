@@ -13,7 +13,6 @@ elseif strcmp(plan.mode, 'CONV')
         factorPP = 1;   
     elseif strcmp(plan.codFiltro, 'PP2capas')
         factorPP = 1/25; % Tentativo  
-        error('Pepperpot %s not recognized', plan.codFiltro);
     end
     plan.Q = plan.I * factorImuestra * factorPP * plan.t_s * 1000;
 else
