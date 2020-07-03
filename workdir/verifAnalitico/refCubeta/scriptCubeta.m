@@ -43,6 +43,7 @@ sigmaPolyY = [-0.007649 0.3502 -0.06355];
 limits = [-2 1 -4.5 1]; 
 dose = getDoseFromPlanV2(doseCanvas, planStructure, dz, targetTh, targetSPR, factorImuestra, airDepthAtPos0, sigmaPolyX, sigmaPolyY);
 dose.crop(limits);
+dose.data = flipud(dose.data);
 dose.plotSlice; colorbar
 
 %% 2. Cargar radiocrómica 

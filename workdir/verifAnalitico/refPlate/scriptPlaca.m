@@ -42,6 +42,7 @@ sigmaPolyY = [-0.007649 0.3502 -0.06355];
 
 limits = [-6 0.5 -4 0.5]; 
 dose = getDoseFromPlanV2(doseCanvas, planStructure, dz, targetTh, targetSPR, factorImuestra, airDepthAtPos0, sigmaPolyX, sigmaPolyY);
+dose.data = flipud(dose.data)
 dose.crop(limits);
 dose.plotSlice; colorbar
 
