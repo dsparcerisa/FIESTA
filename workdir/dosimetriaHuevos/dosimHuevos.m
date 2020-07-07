@@ -3,7 +3,7 @@ polyY = [-3.218e-06 0.1263 -0.07026];
 Z = 7.5;
 sigmaX = polyval(polyX, Z) / 10;
 sigmaY = polyval(polyY, Z) / 10;
-pitch = 0.12;
+pitch = 0.12; % cm, 1.2 mm
 
 dxy = 0.01; % Tenth of mm
 sizeXY = 4;
@@ -60,11 +60,12 @@ tumourR_semisph = (1.5 / pi * tumourVolume)^(1/3)
 % histogram(allFluxes)
 
 %% Mejor asumimos un radio de 3mm
-wellMap = getWell(flux, 0.1, [0 0]);
+wellMap = getWell(totalProtons, tumourR_sph, [0 0]);
 hold on;
-contour(wellMap.getAxisValues('X'), wellMap.getAxisValues('Y'), wellMap.data)
+contour(wellMap.getAxisValues('X'), wellMap.getAxisValues('Y'), wellMap.data, 'y')
 title('Proton fluence (cm^-^2)');
 %%
+figure(2)
 allFluxes = flux.data(wellMap.data==1);
 histogram(allFluxes)
 meanVal = mean(allFluxes)
@@ -98,6 +99,12 @@ dose = flux.copy;
 dose.data = flux.data * depE_J / (firstLayerThickness_cm * 0.001);
 dose.plotSlice; colorbar
 max(dose.data(:))
+
+%% Pero la dosis media en el tumor es de :
+totProtInTumour = sum(totalProtons.data(wellMap.data==1))
+totalEInTumour_J = totProtInTumour * EA * 1e6 * 1.602176634e-19;
+totalTumourMass_kg = 4/3 * pi * tumourR_sph.^3 * 1e-3;
+meanTumourDose = totalEInTumour_J / totalTumourMass_kg
 
 %% Valores de dosis esperados:
 sigmaX = [
