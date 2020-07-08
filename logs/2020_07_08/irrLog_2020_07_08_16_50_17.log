@@ -1,0 +1,146 @@
+[16:50:17.568] Starting plan irradiation...
+	Plan name: Plan de commissioning para CONV
+	Plan comment: 
+	Plan type: CONV
+	PepperPot code: 1
+	Air depth at stage position Z=0: 0.00 cm
+	Absolut shift from X to (0,0) well: [0.000 1.500 0.000]
+	Current intensity: 0.074 nA (planned for 8.000 nA)
+
+[16:50:22.384] Moving to: [5.000 1.500 0.000]
+[16:50:36.649] Moving to: [5.000 1.500 0.000]
+[16:50:36.874] Arrived at: [5.000 1.500 0.000]
+[16:50:37.435] Open shutter for 0.050s
+[16:50:37.514] Shutter closed.
+
+[16:50:37.514] Moving to: [5.000 1.500 -2.000]
+[16:50:39.438] Arrived at: [5.000 1.500 -2.000]
+[16:50:39.496] Open shutter for 0.050s
+[16:50:39.580] Shutter closed.
+
+[16:50:39.581] Moving to: [5.000 1.500 -4.000]
+[16:50:41.505] Arrived at: [5.000 1.500 -4.000]
+[16:50:42.068] Open shutter for 0.050s
+[16:50:42.147] Shutter closed.
+
+[16:50:42.148] Moving to: [5.000 1.500 -6.000]
+[16:50:44.071] Arrived at: [5.000 1.500 -6.000]
+[16:50:44.632] Open shutter for 0.050s
+[16:50:44.715] Shutter closed.
+
+[16:50:44.715] Moving to: [5.000 1.500 -8.000]
+[16:50:46.620] Arrived at: [5.000 1.500 -8.000]
+[16:50:47.183] Open shutter for 0.050s
+[16:50:47.271] Shutter closed.
+
+[16:50:47.271] Moving to: [3.000 4.000 0.000]
+[16:50:56.913] Arrived at: [3.000 4.000 0.000]
+[16:50:57.483] Open shutter for 0.050s
+[16:50:57.561] Shutter closed.
+
+[16:50:57.562] Moving to: [2.000 3.000 -1.000]
+[16:51:00.896] Arrived at: [2.000 3.000 -1.000]
+[16:51:01.459] Open shutter for 0.050s
+[16:51:01.537] Shutter closed.
+
+[16:51:01.538] Moving to: [3.000 2.000 -2.000]
+[16:51:04.899] Arrived at: [3.000 2.000 -2.000]
+[16:51:05.461] Open shutter for 0.050s
+[16:51:05.544] Shutter closed.
+
+[16:51:05.544] Moving to: [2.000 1.000 -3.000]
+[16:51:08.914] Arrived at: [2.000 1.000 -3.000]
+[16:51:09.475] Open shutter for 0.050s
+[16:51:09.553] Shutter closed.
+
+[16:51:09.553] Moving to: [3.000 0.000 -4.000]
+[16:51:12.959] Arrived at: [3.000 0.000 -4.000]
+[16:51:13.522] Open shutter for 0.050s
+[16:51:13.602] Shutter closed.
+
+[16:51:13.602] Moving to: [2.000 -1.000 -5.000]
+[16:51:16.947] Arrived at: [2.000 -1.000 -5.000]
+[16:51:17.508] Open shutter for 0.050s
+[16:51:17.587] Shutter closed.
+
+[16:51:17.588] Moving to: [1.000 4.000 -6.000]
+[16:51:23.615] Arrived at: [1.000 4.000 -6.000]
+[16:51:24.175] Open shutter for 0.050s
+[16:51:24.253] Shutter closed.
+
+[16:51:24.253] Moving to: [0.000 3.000 -7.000]
+[16:51:27.637] Arrived at: [0.000 3.000 -7.000]
+[16:51:27.696] Open shutter for 0.050s
+[16:51:27.780] Shutter closed.
+
+[16:51:27.781] Moving to: [1.000 2.000 -8.000]
+[16:51:31.150] Arrived at: [1.000 2.000 -8.000]
+[16:51:31.710] Open shutter for 0.050s
+[16:51:31.792] Shutter closed.
+
+[16:51:31.792] Moving to: [0.000 1.000 -9.000]
+[16:51:35.146] Arrived at: [0.000 1.000 -9.000]
+[16:51:35.708] Open shutter for 0.050s
+[16:51:35.787] Shutter closed.
+
+[16:51:35.787] Moving to: [1.000 0.000 -10.000]
+[16:51:39.185] Arrived at: [1.000 0.000 -10.000]
+[16:51:39.745] Open shutter for 0.050s
+[16:51:39.826] Shutter closed.
+
+[16:51:39.826] Moving to: [-1.000 4.000 0.000]
+[16:51:51.751] Arrived at: [-1.000 4.000 0.000]
+[16:51:52.310] Open shutter for 0.250s
+[16:51:52.597] Shutter closed.
+
+[16:51:52.598] Moving to: [-2.000 3.000 -1.000]
+[16:51:55.943] Arrived at: [-2.000 3.000 -1.000]
+[16:51:56.507] Open shutter for 0.250s
+[16:51:56.796] Shutter closed.
+
+[16:51:56.796] Moving to: [-1.000 2.000 -2.000]
+[16:52:00.183] Arrived at: [-1.000 2.000 -2.000]
+[16:52:00.743] Open shutter for 0.250s
+[16:52:01.012] Shutter closed.
+
+[16:52:01.012] Moving to: [-2.000 1.000 -3.000]
+[16:52:04.373] Arrived at: [-2.000 1.000 -3.000]
+[16:52:04.933] Open shutter for 0.250s
+[16:52:05.223] Shutter closed.
+
+[16:52:05.223] Moving to: [-1.000 0.000 -4.000]
+[16:52:08.596] Arrived at: [-1.000 0.000 -4.000]
+[16:52:09.165] Open shutter for 0.250s
+[16:52:09.435] Shutter closed.
+
+[16:52:09.436] Moving to: [-2.000 -1.000 -5.000]
+[16:52:12.793] Arrived at: [-2.000 -1.000 -5.000]
+[16:52:12.851] Open shutter for 0.250s
+[16:52:13.146] Shutter closed.
+
+[16:52:13.147] Moving to: [-3.000 4.000 -6.000]
+[16:52:19.139] Arrived at: [-3.000 4.000 -6.000]
+[16:52:19.698] Open shutter for 0.250s
+[16:52:19.966] Shutter closed.
+
+[16:52:19.966] Moving to: [-4.000 3.000 -7.000]
+[16:52:23.335] Arrived at: [-4.000 3.000 -7.000]
+[16:52:23.897] Open shutter for 0.250s
+[16:52:24.162] Shutter closed.
+
+[16:52:24.163] Moving to: [-3.000 2.000 -8.000]
+[16:52:27.497] Arrived at: [-3.000 2.000 -8.000]
+[16:52:28.064] Open shutter for 0.250s
+[16:52:28.329] Shutter closed.
+
+[16:52:28.330] Moving to: [-4.000 1.000 -9.000]
+[16:52:31.658] Arrived at: [-4.000 1.000 -9.000]
+[16:52:32.215] Open shutter for 0.250s
+[16:52:32.505] Shutter closed.
+
+[16:52:32.505] Moving to: [-3.000 0.000 -10.000]
+[16:52:35.892] Arrived at: [-3.000 0.000 -10.000]
+[16:52:36.456] Open shutter for 0.250s
+[16:52:36.744] Shutter closed.
+
+[16:52:36.745] Plan irradiation finished.

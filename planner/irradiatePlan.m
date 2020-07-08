@@ -1,4 +1,4 @@
-function irradiatePlan(COMstage, COMshutter, thePlan, vector2startPoint, stageLimits, airDepthAtPos0, app)
+function irradiatePlan(Fcfg, COMstage, COMshutter, thePlan, vector2startPoint, stageLimits, airDepthAtPos0, app)
 % void irradiatePlan(COMstage, COMshutter, plan, vector2startPoint, stageLimits, airDepthAtPos0, app)
 % Launches plan irradiation
 if (exist('app'))
@@ -19,7 +19,7 @@ end
 
 %% Create log file
 logFileName = datestr(now,'irrLog_yyyy_mm_dd_HH_MM_SS.log');
-logFile = fopen(fullfile('logs',logFileName),'w');
+logFile = fopen(fullfile(Fcfg.logPath,logFileName),'w');
 
 fprintf(logFile, [datestr(now,'[HH:MM:SS.FFF] ') 'Starting plan irradiation...' '\n']);
 fprintf(logFile, '\tPlan name: %s\n', thePlan.name);
@@ -58,16 +58,16 @@ for i=1:numel(thePlan.X)
         msg = sprintf('Deliver: %i FLASH shots', thePlan.Nshots(i));    
         fprintf(logFile, [datestr(now,'[HH:MM:SS.FFF] ') msg '\n']);
     
-        Shutter(COMshutter, 'f', thePlan.Nshots(i));
+        shutter(COMshutter, 'f', thePlan.Nshots(i));
         msg = sprintf('Finished.\n');       
         fprintf(logFile, [datestr(now,'[HH:MM:SS.FFF] ') msg '\n']);
  
     elseif strcmp(thePlan.mode, 'CONV')
-        Configure_shutter(COMshutter, 't', thePlan.t_s(i))
+        configureShutter(COMshutter, 't', thePlan.t_s(i))
         msg = sprintf('Open shutter for %3.3fs', thePlan.t_s(i));  
         fprintf(logFile, [datestr(now,'[HH:MM:SS.FFF] ') msg '\n']);
 
-        Shutter(COMshutter,'n',1);
+        shutter(COMshutter,'n',1);
         msg = sprintf('Shutter closed.\n');       
         fprintf(logFile, [datestr(now,'[HH:MM:SS.FFF] ') msg '\n']);
         

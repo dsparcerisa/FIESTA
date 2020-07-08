@@ -1,0 +1,71 @@
+[18:38:12.517] Starting plan irradiation...
+	Plan name: Plan de commissioning para CONV
+	Plan comment: 
+	Plan type: CONV
+	PepperPot code: PP2capas
+	Air depth at stage position Z=0: 0.00 cm
+	Absolut shift from X to (0,0) well: [0.000 0.000 0.000]
+	Current intensity: 0.000 nA (planned for 8.000 nA)
+
+[18:38:15.937] Moving to: [3.000 2.000 0.000]
+[18:38:16.319] Moving to: [3.000 2.000 0.000]
+[18:38:16.583] Arrived at: [3.000 2.000 0.000]
+[18:38:17.178] Open shutter for 0.050s
+[18:38:17.304] Shutter closed.
+
+[18:38:17.308] Moving to: [3.000 0.000 -1.500]
+[18:38:20.706] Arrived at: [3.000 0.000 -1.500]
+[18:38:21.311] Open shutter for 0.050s
+[18:38:21.428] Shutter closed.
+
+[18:38:21.429] Moving to: [3.000 -2.000 -3.000]
+[18:38:24.676] Arrived at: [3.000 -2.000 -3.000]
+[18:38:25.280] Open shutter for 0.050s
+[18:38:25.402] Shutter closed.
+
+[18:38:25.403] Moving to: [1.000 2.000 -4.500]
+[18:38:31.892] Arrived at: [1.000 2.000 -4.500]
+[18:38:32.510] Open shutter for 0.050s
+[18:38:32.625] Shutter closed.
+
+[18:38:32.627] Moving to: [1.000 0.000 -6.000]
+[18:38:36.185] Arrived at: [1.000 0.000 -6.000]
+[18:38:36.795] Open shutter for 0.050s
+[18:38:36.906] Shutter closed.
+
+[18:38:36.908] Moving to: [1.000 -2.000 -7.500]
+[18:38:40.147] Arrived at: [1.000 -2.000 -7.500]
+[18:38:40.733] Open shutter for 0.050s
+[18:38:40.845] Shutter closed.
+
+[18:38:40.846] Moving to: [-1.000 2.000 0.000]
+[18:38:51.292] Arrived at: [-1.000 2.000 0.000]
+[18:38:51.887] Open shutter for 0.250s
+[18:38:52.200] Shutter closed.
+
+[18:38:52.201] Moving to: [-1.000 0.000 -1.500]
+[18:38:55.587] Arrived at: [-1.000 0.000 -1.500]
+[18:38:56.197] Open shutter for 0.250s
+[18:38:56.512] Shutter closed.
+
+[18:38:56.512] Moving to: [-1.000 -2.000 -3.000]
+[18:38:59.971] Arrived at: [-1.000 -2.000 -3.000]
+[18:39:00.555] Open shutter for 0.250s
+[18:39:00.870] Shutter closed.
+
+[18:39:00.870] Moving to: [-3.000 2.000 -4.500]
+[18:39:07.457] Arrived at: [-3.000 2.000 -4.500]
+[18:39:08.049] Open shutter for 0.250s
+[18:39:08.352] Shutter closed.
+
+[18:39:08.354] Moving to: [-3.000 0.000 -6.000]
+[18:39:11.778] Arrived at: [-3.000 0.000 -6.000]
+[18:39:12.383] Open shutter for 0.250s
+[18:39:12.703] Shutter closed.
+
+[18:39:12.704] Moving to: [-3.000 -2.000 -7.500]
+[18:39:16.144] Arrived at: [-3.000 -2.000 -7.500]
+[18:39:16.223] Open shutter for 0.250s
+[18:39:16.552] Shutter closed.
+
+[18:39:16.553] Plan irradiation finished.
