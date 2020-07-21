@@ -1,0 +1,4 @@
+%% Comenzar
+clear all; close all
+FIESTAConfig_win
+startShutter

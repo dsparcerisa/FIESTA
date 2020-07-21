@@ -1,0 +1,33 @@
+[13:29:53.900] 5 cycles of 1.000s open and 3.000s waiting
+[13:29:53.904] Starting plan irradiation...
+	Plan comment: Prueba
+	Current intensity: 0.000 nA 
+
+[13:29:58.880] Configure shutter to open for for 1.000s
+[13:29:59.281] Done shutter configuration.
+[13:29:59.303] Starting cycle 1 of 5
+
+[13:29:59.306] Opening shutter for 1.000s
+[13:30:00.324] Shutter closed.
+
+[13:30:03.324] Starting cycle 2 of 5
+
+[13:30:03.325] Opening shutter for 1.000s
+[13:30:04.349] Shutter closed.
+
+[13:30:07.350] Starting cycle 3 of 5
+
+[13:30:07.351] Opening shutter for 1.000s
+[13:30:08.374] Shutter closed.
+
+[13:30:11.380] Starting cycle 4 of 5
+
+[13:30:11.382] Opening shutter for 1.000s
+[13:30:12.416] Shutter closed.
+
+[13:30:15.418] Starting cycle 5 of 5
+
+[13:30:15.421] Opening shutter for 1.000s
+[13:30:16.451] Shutter closed.
+
+[13:30:19.453] Plan irradiation finished.
