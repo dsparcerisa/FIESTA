@@ -1,0 +1,13 @@
+[09:10:26.946] 1 cycles of 10.000s open and 3.000s waiting
+[09:10:26.962] Starting plan irradiation...
+	Plan comment: alienacion
+	Current intensity: 0.000 nA 
+
+[09:10:38.054] Configure shutter to open for for 10.000s
+[09:10:38.649] Done shutter configuration.
+
+[09:10:38.664] Starting cycle 1 of 1
+[09:10:38.680] Opening shutter for 10.000s
+[09:10:48.748] Shutter closed.
+
+[09:10:51.764] Plan irradiation finished.
