@@ -50,8 +50,11 @@ for i=1:numel(thePlan.X)
     absPos = [thePlan.X(i) thePlan.Y(i) thePlan.Z(i)] + vector2startPoint;
     msg = sprintf('Moving to: [%3.3f %3.3f %3.3f]', absPos(1), absPos(2), absPos(3));
     fprintf(logFile, [datestr(now,'[HH:MM:SS.FFF] ') msg '\n']);
-    finished = stageControl_moveToAbsPos(COMstage, absPos);
-    msg = sprintf('Arrived at: [%3.3f %3.3f %3.3f]', absPos(1), absPos(2), absPos(3));
+    [finished, finalPos] = stageControl_moveToAbsPos(COMstage, absPos);
+    msg = sprintf('Arrived at: [%3.3f %3.3f %3.3f]', finalPos(1), finalPos(2), finalPos(3));
+    if (any(absPos ~= finalPos))
+        msg = [msg ' WARNING!'];
+    end
     fprintf(logFile, [datestr(now,'[HH:MM:SS.FFF] ') msg '\n']);
 
     if strcmp(thePlan.mode, 'FLASH')
