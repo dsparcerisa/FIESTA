@@ -1,0 +1,56 @@
+[15:53:36.346] Starting plan irradiation...
+	Plan name: Plan de movimiento solo stage
+	Plan comment: Prueba 2
+	Absolut shift from X to (0,0) well: [0.000 0.000 0.000]
+[15:53:41.352] Moving to: [-1.000 1.000 0.000]
+[15:53:43.657] Moving to: [-1.000 1.000 0.000]
+[15:53:43.901] Arrived at: [-1.000 1.000 0.000]
+[15:53:43.901] Wait 0.100s
+[15:53:44.010] Continue movement.
+
+[15:53:44.010] Moving to: [-1.000 0.000 0.000]
+[15:53:45.273] Arrived at: [-1.000 0.000 0.000]
+[15:53:45.273] Wait 0.100s
+[15:53:45.395] Continue movement.
+
+[15:53:45.395] Moving to: [0.000 0.000 0.000]
+[15:53:46.644] Arrived at: [0.000 0.000 0.000]
+[15:53:46.645] Wait 0.100s
+[15:53:46.751] Continue movement.
+
+[15:53:46.751] Moving to: [0.000 1.000 0.000]
+[15:53:48.027] Arrived at: [0.000 1.000 0.000]
+[15:53:48.027] Wait 0.100s
+[15:53:48.127] Continue movement.
+
+[15:53:48.127] Moving to: [1.000 1.000 0.000]
+[15:53:49.387] Arrived at: [1.000 1.000 0.000]
+[15:53:49.387] Wait 0.100s
+[15:53:49.492] Continue movement.
+
+[15:53:49.492] Moving to: [1.000 0.000 0.000]
+[15:53:50.763] Arrived at: [1.000 0.000 0.000]
+[15:53:50.763] Wait 0.100s
+[15:53:50.885] Continue movement.
+
+[15:53:50.885] Moving to: [1.000 -1.000 0.000]
+[15:53:52.122] Arrived at: [1.000 -1.000 0.000]
+[15:53:52.122] Wait 0.100s
+[15:53:52.229] Continue movement.
+
+[15:53:52.229] Moving to: [0.000 -1.000 0.000]
+[15:53:53.488] Arrived at: [0.000 -1.000 0.000]
+[15:53:53.488] Wait 0.100s
+[15:53:53.595] Continue movement.
+
+[15:53:53.595] Moving to: [-1.000 -1.000 0.000]
+[15:53:54.840] Arrived at: [-1.000 -1.000 0.000]
+[15:53:54.840] Wait 0.100s
+[15:53:54.946] Continue movement.
+
+[15:53:54.946] Moving to: [-1.000 1.000 0.000]
+[15:53:56.985] Arrived at: [-1.000 1.000 0.000]
+[15:53:56.985] Wait 0.100s
+[15:53:57.091] Continue movement.
+
+[15:53:57.091] Plan finished.

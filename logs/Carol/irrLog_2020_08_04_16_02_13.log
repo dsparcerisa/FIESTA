@@ -1,0 +1,21 @@
+[16:02:13.780] Starting plan irradiation...
+	Plan name: Plan de movimiento solo stage
+	Plan comment: Prueba con parada
+	Absolut shift from X to (0,0) well: [0.000 0.000 0.000]
+[16:02:16.834] Starting iteration 1
+[16:02:16.834] Moving to: [-1.000 1.000 0.000]
+[16:02:17.084] Arrived at: [-1.000 1.000 0.000]
+[16:02:17.084] Wait 0.100s
+[16:02:17.191] Continue movement.
+
+[16:02:17.191] Moving to: [-1.000 0.000 0.000]
+[16:02:18.548] Arrived at: [-1.000 0.000 0.000]
+[16:02:18.548] Wait 0.100s
+[16:02:18.656] Continue movement.
+
+[16:02:18.656] Moving to: [0.000 0.000 0.000]
+[16:02:19.989] Arrived at: [0.000 0.000 0.000]
+[16:02:19.989] Wait 0.100s
+[16:02:20.112] Continue movement.
+
+[16:02:20.112] Moving to: [0.000 1.000 0.000]
