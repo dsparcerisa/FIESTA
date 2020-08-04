@@ -1,0 +1,29 @@
+[11:31:30.217] 5 cycles of 20.000s open and 5.000s waiting
+[11:31:30.217] Starting plan irradiation...
+	Plan comment: Segunda prueba Faraday
+	Current intensity: 1.460 nA 
+
+[11:33:50.843] Configure shutter to open for for 20.000s
+[11:33:51.335] Done shutter configuration.
+
+[11:33:51.336] Starting cycle 1 of 5
+[11:33:51.336] Opening shutter for 20.000s
+[11:34:11.403] Shutter closed.
+
+[11:34:16.418] Starting cycle 2 of 5
+[11:34:16.420] Opening shutter for 20.000s
+[11:34:36.515] Shutter closed.
+
+[11:34:41.517] Starting cycle 3 of 5
+[11:34:41.518] Opening shutter for 20.000s
+[11:35:01.603] Shutter closed.
+
+[11:35:06.604] Starting cycle 4 of 5
+[11:35:06.605] Opening shutter for 20.000s
+[11:35:26.693] Shutter closed.
+
+[11:35:31.694] Starting cycle 5 of 5
+[11:35:31.694] Opening shutter for 20.000s
+[11:35:51.780] Shutter closed.
+
+[11:35:56.781] Plan irradiation finished.

@@ -1,0 +1,13 @@
+[11:08:00.156] 1 cycles of 0.030s open and 3.000s waiting
+[11:08:00.158] Starting plan irradiation...
+	Plan comment: RC para haz de 8.28 MeV
+	Current intensity: 1.470 nA 
+
+[11:09:42.528] Configure shutter to open for for 0.030s
+[11:09:43.226] Done shutter configuration.
+
+[11:09:43.230] Starting cycle 1 of 1
+[11:09:43.232] Opening shutter for 0.030s
+[11:09:43.318] Shutter closed.
+
+[11:09:46.321] Plan irradiation finished.

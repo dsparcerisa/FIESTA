@@ -1,0 +1,13 @@
+[11:06:25.251] 1 cycles of 0.030s open and 3.000s waiting
+[11:06:25.253] Starting plan irradiation...
+	Plan comment: Prueba shutter sin haz
+	Current intensity: 0.000 nA 
+
+[11:06:34.411] Configure shutter to open for for 0.030s
+[11:06:35.112] Done shutter configuration.
+
+[11:06:35.113] Starting cycle 1 of 1
+[11:06:35.115] Opening shutter for 0.030s
+[11:06:35.196] Shutter closed.
+
+[11:06:38.197] Plan irradiation finished.

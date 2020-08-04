@@ -1,0 +1,13 @@
+[11:29:07.499] 1 cycles of 20.000s open and 3.000s waiting
+[11:29:07.499] Starting plan irradiation...
+	Plan comment: Prueba Faraday Cup a 8.28 MeV
+	Current intensity: 1.500 nA 
+
+[11:30:43.945] Configure shutter to open for for 20.000s
+[11:30:44.433] Done shutter configuration.
+
+[11:30:44.433] Starting cycle 1 of 1
+[11:30:44.433] Opening shutter for 20.000s
+[11:31:04.507] Shutter closed.
+
+[11:31:07.508] Plan irradiation finished.
