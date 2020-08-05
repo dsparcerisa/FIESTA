@@ -2,6 +2,12 @@
 clear all; close all
 FIESTAConfig_win
 instrreset
+
+% Establecer la velocidad de movimiento de la stage (0-6000)
+% ANTES de llamar a startStage. Si no la encuentra, utilizará el valor
+% máximo de 6000.
+varSpeed = 6000; 
+
 startStage
 
 %% Abrir el controlador de la stage en modo manual
