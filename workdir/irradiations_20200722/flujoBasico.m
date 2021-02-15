@@ -16,10 +16,18 @@ configureShutter(COMshutter, 't', t_manual);
 shutter(COMshutter, 'n', 1);
 
 %% Cálculo de la energía
-separacionAire_cm = 9.2;
-E0 = 8.755;
+
+E0 = 6.75
+
+%. 1. Caída en el kapton
+kaptonWindowThickness_cm = 8e-4; % 8 um
+E_temp = energyStoppingPowerKapton(E0, [0:1e-4:kaptonWindowThickness_cm]);
+E0_afterK = E_temp(end)
+
+% 2. Caída en el aire
+separacionAire_cm = 4.37;
 
 dz_cm = 0.001;
 Zval = 0:dz_cm:separacionAire_cm;
-energyA = energyStoppingPower(E0, Zval);
+energyA = energyStoppingPower(E0_afterK, Zval);
 finalE = energyA(end)
