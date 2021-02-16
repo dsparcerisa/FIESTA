@@ -3,4 +3,4 @@ Fcfg.planPath = 'C:\Users\CMAM\Documents\MATLAB\FIESTA\planes\2020_07_22';
 Fcfg.filmPath = 'C:\Users\CMAM\Documents\MATLAB\FIESTA\films\2020_07_22';
 Fcfg.filmCalFile = 'C:\Users\CMAM\Documents\MATLAB\FIESTA\filmDosimetry\CoefFitCMAM_HG.mat';
 Fcfg.arduinoPort = 'COM6'; % for shutter
-Fcfg.velmexPort = 'COM4'; % for stage
+Fcfg.velmexPort = 'COM3'; % for stage
