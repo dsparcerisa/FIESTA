@@ -1,0 +1,74 @@
+[10:53:00.729] Starting plan irradiation...
+	Plan name: Plan de movimiento solo stage
+	Plan comment: pruebaAcero2
+	Absolut shift from X to (0,0) well: [0.000 0.000 0.000]
+[10:53:11.692] Starting iteration 1
+[10:53:11.692] Moving to: [-5.000 0.000 0.000]
+[10:53:19.352] Arrived at: [-5.000 0.000 0.000]
+[10:53:19.353] Wait 0.000s
+[10:53:19.353] Continue movement.
+
+[10:53:19.353] Moving to: [5.000 0.000 0.000]
+[10:53:26.568] Arrived at: [5.000 0.000 0.000]
+[10:53:26.568] Wait 0.000s
+[10:53:26.570] Continue movement.
+
+[10:53:26.571] Moving to: [-5.000 0.030 0.000]
+[10:53:34.243] Arrived at: [-5.000 0.030 0.000]
+[10:53:34.249] Wait 0.000s
+[10:53:34.251] Continue movement.
+
+[10:53:34.252] Moving to: [5.000 0.030 0.000]
+[10:53:41.466] Arrived at: [5.000 0.030 0.000]
+[10:53:41.466] Wait 0.000s
+[10:53:41.470] Continue movement.
+
+[10:53:41.471] Finished iteration 1
+
+[10:53:41.471] Starting iteration 2
+[10:53:41.471] Moving to: [-5.000 0.000 0.000]
+[10:53:49.178] Arrived at: [-5.000 0.000 0.000]
+[10:53:49.178] Wait 0.000s
+[10:53:49.181] Continue movement.
+
+[10:53:49.183] Moving to: [5.000 0.000 0.000]
+[10:53:56.404] Arrived at: [5.000 0.000 0.000]
+[10:53:56.408] Wait 0.000s
+[10:53:56.409] Continue movement.
+
+[10:53:56.409] Moving to: [-5.000 0.030 0.000]
+[10:54:04.232] Arrived at: [-5.000 0.030 0.000]
+[10:54:04.232] Wait 0.000s
+[10:54:04.232] Continue movement.
+
+[10:54:04.232] Moving to: [5.000 0.030 0.000]
+[10:54:11.453] Arrived at: [5.000 0.030 0.000]
+[10:54:11.453] Wait 0.000s
+[10:54:11.453] Continue movement.
+
+[10:54:11.453] Finished iteration 2
+
+[10:54:11.457] Starting iteration 3
+[10:54:11.458] Moving to: [-5.000 0.000 0.000]
+[10:54:19.134] Arrived at: [-5.000 0.000 0.000]
+[10:54:19.135] Wait 0.000s
+[10:54:19.136] Continue movement.
+
+[10:54:19.138] Moving to: [5.000 0.000 0.000]
+[10:54:26.347] Arrived at: [5.000 0.000 0.000]
+[10:54:26.348] Wait 0.000s
+[10:54:26.348] Continue movement.
+
+[10:54:26.348] Moving to: [-5.000 0.030 0.000]
+[10:54:34.006] Arrived at: [-5.000 0.030 0.000]
+[10:54:34.007] Wait 0.000s
+[10:54:34.007] Continue movement.
+
+[10:54:34.007] Moving to: [5.000 0.030 0.000]
+[10:54:41.230] Arrived at: [5.000 0.030 0.000]
+[10:54:41.231] Wait 0.000s
+[10:54:41.232] Continue movement.
+
+[10:54:41.232] Finished iteration 3
+
+[10:54:41.233] Plan finished.
