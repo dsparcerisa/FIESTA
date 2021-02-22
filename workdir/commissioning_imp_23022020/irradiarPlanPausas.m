@@ -1,6 +1,6 @@
 %% Comenzar
 clear all; close all
-FIESTAConfig_win
+FIESTAConfig_win_23feb2021
 instrreset
 
 % Establecer la velocidad de movimiento de la stage (0-6000)
@@ -24,6 +24,3 @@ vector2startPoint = [0 0 0]; % para mover todo el plan un vector constante
 stageLimits = [-11 11 -11 11 -11 11]; % corregir antes de irradiar para evitar fallos de movimiento
 irradiatePlanOnlyStage(Fcfg, COMstage, thePlan, vector2startPoint, stageLimits, maxIterations)
 
-%% Irradiar plan (con shutter)
-startShutter
-irradiatePlan(COMstage, COMshutter, thePlan, vector2startPoint, stageLimits, 0.0)

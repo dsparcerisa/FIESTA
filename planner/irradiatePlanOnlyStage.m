@@ -43,9 +43,20 @@ for j=1:numIterations
         end
         fprintf(logFile, [datestr(now,'[HH:MM:SS.FFF] ') msg '\n']);
         
-        msg = sprintf('Wait %3.3fs', thePlan.t_s(i));
-        fprintf(logFile, [datestr(now,'[HH:MM:SS.FFF] ') msg '\n']);
-        pause(thePlan.t_s(i));
+        if (thePlan.t_s(i) <= 0)
+            
+            msg = sprintf('Pause until key press...');
+            fprintf(logFile, [datestr(now,'[HH:MM:SS.FFF] ') msg '\n']);
+            pause;
+        
+        else
+            
+            msg = sprintf('Wait %3.3fs', thePlan.t_s(i));
+            fprintf(logFile, [datestr(now,'[HH:MM:SS.FFF] ') msg '\n']);
+            pause(thePlan.t_s(i));
+            
+        end
+            
         msg = sprintf('Continue movement.\n');
         fprintf(logFile, [datestr(now,'[HH:MM:SS.FFF] ') msg '\n']);
         
