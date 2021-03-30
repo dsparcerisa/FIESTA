@@ -1,4 +1,4 @@
-function [sigmaX, sigmaY, deltasigmaX, deltasigmaY, xCenter, yCenter] = getSigmas(x,y,dose,deltaDose,offCenterSigmas)
+function [sigmaX, sigmaY, deltasigmaX, deltasigmaY, xCenter, yCenter, FWHMx, FWHMy] = getSigmas(x,y,dose,deltaDose,offCenterSigmas)
 
 if size(x,1) < size(x,2)
     x = x';
@@ -120,6 +120,13 @@ xCenter = FX.b;
 sigmaX = FX.c / sqrt(2);
 deltasigmaX = max(abs(FXerrors(:,4)-FX.c)) / sqrt(2);
 
+Xpos = x(xmask);
+Xval = sumY(xmask);
+[Xmax, Xmaxpos] = max(Xval);
+X50left_i = find(Xval>Xmax/2,1,'first');
+X50right_i = find(Xval>Xmax/2,1,'last');
+FWHMx = Xpos(X50right_i) - Xpos(X50left_i)
+
 subplot(1,2,1); hold on
 %errorbar(x(xmask), sumY(xmask), errSumY(xmask), 'g.'); hold on
 errorbar(x, sumY, errSumY, 'g.'); hold on
@@ -135,6 +142,13 @@ FYerrors = confint(FY);
 yCenter = FY.b;
 sigmaY = FY.c / sqrt(2);
 deltasigmaY = max(abs(FYerrors(:,4)-FY.c)) / sqrt(2);
+
+Ypos = y(ymask);
+Yval = sumX(ymask);
+[Ymax, Ymaxpos] = max(Yval);
+Y50left_i = find(Yval>Ymax/2,1,'first');
+Y50right_i = find(Yval>Ymax/2,1,'last');
+FWHMy = Ypos(Y50right_i) - Ypos(Y50left_i)
 
 subplot(1,2,2); hold on
 %errorbar(y(ymask), sumX(ymask), errSumX(ymask), 'g'); hold on
