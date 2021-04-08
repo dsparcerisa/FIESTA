@@ -156,7 +156,7 @@ save(saveFile);
 %% Para comenzar desde aquí (específico de Rad1)
 clear all
 addpath '/Users/dani/Documents/FIESTA/workdir/calibracionRC_nuevo'
-radName = 'Rad14';
+radName = 'Rad18';
 saveFile = [radName '.mat']
 load(saveFile);
 

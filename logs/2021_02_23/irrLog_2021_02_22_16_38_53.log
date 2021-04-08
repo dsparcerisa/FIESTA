@@ -1,0 +1,23 @@
+[16:38:53.503] Starting plan irradiation...
+	Plan name: Plan de movimiento solo stage
+	Plan comment: prueba 2
+	Absolut shift from X to (0,0) well: [0.000 0.000 0.000]
+[16:38:56.123] Starting iteration 1
+[16:38:56.125] Moving to: [0.000 0.000 -1.000]
+[16:38:56.519] Arrived at: [0.000 0.000 -1.000]
+[16:38:56.520] Pause until key press...
+[16:39:01.857] Continue movement.
+
+[16:39:01.858] Moving to: [1.000 1.000 -1.000]
+[16:39:04.186] Arrived at: [1.000 1.000 -1.000]
+[16:39:04.188] Pause until key press...
+[16:39:06.433] Continue movement.
+
+[16:39:06.434] Moving to: [0.000 0.000 -2.000]
+[16:39:09.753] Arrived at: [0.000 0.000 -2.000]
+[16:39:09.754] Pause until key press...
+[16:39:11.336] Continue movement.
+
+[16:39:11.336] Finished iteration 1
+
+[16:39:11.337] Plan finished.

@@ -90,22 +90,22 @@ biC = bC + dbC*randn(N_ITER,1);
 Svals = 1:1:100;
 REiC = (1 - aiC.*Svals.^biC);
 hold on
-plot(Svals, FC(Svals), 'g-');
+% plot(Svals, FC(Svals), 'g-');
 hold on
 Ydata_plusC = prctile(REiC, pctValue);
 Ydata_minusC = prctile(REiC, 100-pctValue);
 x_plotC =[Svals, fliplr(Svals)];
 y_plotC=[Ydata_minusC, fliplr(Ydata_plusC)];
-fill(x_plotC, y_plotC,1,'facecolor', [0.8 1 0.8], 'edgecolor', 'green', 'edgealpha', 0.6, 'facealpha', 0.2, 'LineStyle',':');
+% fill(x_plotC, y_plotC,1,'facecolor', [0.8 1 0.8], 'edgecolor', 'green', 'edgealpha', 0.6, 'facealpha', 0.2, 'LineStyle',':');
 
 %% Plot literature data in grey
 for i=1:10 
    plot(LF.X{i}, LF.Y{i},  LF.markers{i}, 'Color', [0.7 0.7 0.7], 'MarkerFaceColor', [0.7 0.7 0.7]); hold on
 end
 
-errorbar(EBT3.allSw_preFilm, EBT3.allratios, EBT3.alldratios, EBT3.alldratios, EBT3.alldSw_preFilm, EBT3.alldSw_preFilm, '.', 'Color', [0, 0.4470, 0.7410]);
-errorbar(EBT2.allSw_preFilm, EBT2.allratios, EBT2.alldratios, EBT2.alldratios, EBT2.alldSw_preFilm, EBT2.alldSw_preFilm, '.', 'Color', [0.8500, 0.3250, 0.0980]); 
-errorbar(EBT3unl.allSw_preFilm, EBT3unl.allratios, EBT3unl.alldratios, EBT3unl.alldratios, EBT3unl.alldSw_preFilm, EBT3unl.alldSw_preFilm, '.', 'Color', [0.4660 0.6740 0.1880])
+errorbar(EBT3.allSw_preFilm, EBT3.allratios, EBT3.alldratios, EBT3.alldratios, EBT3.alldSw_preFilm, EBT3.alldSw_preFilm, '.', 'Color', [0, 0.4470, 0.7410], 'MarkerSize', 10);
+errorbar(EBT2.allSw_preFilm, EBT2.allratios, EBT2.alldratios, EBT2.alldratios, EBT2.alldSw_preFilm, EBT2.alldSw_preFilm, '.', 'Color', [0.8500, 0.3250, 0.0980], 'MarkerSize', 10); 
+errorbar(EBT3unl.allSw_preFilm, EBT3unl.allratios, EBT3unl.alldratios, EBT3unl.alldratios, EBT3unl.alldSw_preFilm, EBT3unl.alldSw_preFilm, '.', 'Color', [0.4660 0.6740 0.1880], 'MarkerSize', 10);
 % plot(Svals, FC(Svals), 'b-');
 plot(LFSvals, 1-LF.a2.*LFSvals.^LF.b2, 'k-');
 plot(Svals, F2(Svals), 'b-');
@@ -114,7 +114,7 @@ plot(Svals, F2(Svals), 'b-');
 legend({'EBT3','EBT2','EBT3unlaminated', 'Literature values', 'Data fit', 'Literature fit excluding Grilj (2018) data'}, 'Location', 'SouthWest')
 set(gca, 'XScale', 'log');
 xlabel('LET (keV/µm)');
-ylim([0 1.2]);
+ylim([0 1.4]);
 xlim([1 100]);
 grid on
 title('Measured values');
@@ -125,5 +125,7 @@ yticklabels([])
 axes(ha(1))
 compareWithLiterature
 xticks([1 10 100]);
+ylim([0 1.4]);
+yticks([0 0.2 0.4 0.6 0.8 1 1.2 1.4]);
 xticklabels({'1','10','100'});
 ylabel('RE');

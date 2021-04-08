@@ -36,8 +36,10 @@ for j=1:numIterations
         absPos = [thePlan.X(i) thePlan.Y(i) thePlan.Z(i)] + vector2startPoint;
         msg = sprintf('Moving to: [%3.3f %3.3f %3.3f]', absPos(1), absPos(2), absPos(3));
         fprintf(logFile, [datestr(now,'[HH:MM:SS.FFF] ') msg '\n']);
+        fprintf([msg '\n']);
         [finished, finalPos] = stageControl_moveToAbsPos(COMstage, absPos);
         msg = sprintf('Arrived at: [%3.3f %3.3f %3.3f]', finalPos(1), finalPos(2), finalPos(3));
+        fprintf([msg '\n']);        
         if (any(absPos ~= finalPos))
             msg = [msg ' WARNING!'];
         end
@@ -47,6 +49,7 @@ for j=1:numIterations
             
             msg = sprintf('Pause until key press...');
             fprintf(logFile, [datestr(now,'[HH:MM:SS.FFF] ') msg '\n']);
+            fprintf([msg '\n']);
             pause;
         
         else
@@ -59,15 +62,18 @@ for j=1:numIterations
             
         msg = sprintf('Continue movement.\n');
         fprintf(logFile, [datestr(now,'[HH:MM:SS.FFF] ') msg '\n']);
-        
+        fprintf([msg '\n']);
     end
     msg = sprintf('Finished iteration %i\n', j);
-    fprintf(logFile, [datestr(now,'[HH:MM:SS.FFF] ') msg '\n']);
+    fprintf(logFile, [datestr(now,'[HH:MM:SS.FFF] ') msg '\n'])
+    fprintf([msg '\n']);
+    
 end
 
 %% Close log file and end
 msg = sprintf('Plan finished.');       
 fprintf(logFile, [datestr(now,'[HH:MM:SS.FFF] ') msg '\n']);
+fprintf([msg '\n']);
 fclose(logFile);
 
 end

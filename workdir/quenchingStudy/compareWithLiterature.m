@@ -448,13 +448,67 @@ Ydata_minus2 = prctile(REi2, 100-pctValue);
 x_plot2 =[Svals, fliplr(Svals)];
 y_plot2=[Ydata_minus2, fliplr(Ydata_plus2)];
 
+%% Fit ONLY EBT2
+x3 = vertcat(X{3:4});
+y3 = vertcat(Y{3:4});
+F23 = fit(x3, y3, ft2, 'Lower', [0 0])
+a3 = F23.a
+b3 = F23.b
+pctValue = 68.2;
+confI3 = confint(F23,pctValue/100);
+da3 = 0.5*(confI3(2,1) - confI3(1,1))
+db3 = 0.5*(confI3(2,2) - confI3(1,2))
+
+% Generar líneas de confianza
+N_ITER = 10000;
+ai3 = a3 + da3*randn(N_ITER,1);
+bi3 = b3 + db3*randn(N_ITER,1);
+Svals = 1:1:100;
+REi3 = (1 - ai3.*Svals.^bi3);
+hold on
+plot(Svals, F23(Svals), 'r-');
+hold on
+Ydata_plus3 = prctile(REi3, pctValue);
+Ydata_minus3 = prctile(REi3, 100-pctValue);
+x_plot3 =[Svals, fliplr(Svals)];
+y_plot3=[Ydata_minus3, fliplr(Ydata_plus3)];
+
+%% Fit ONLY EBT3
+x4 = vertcat(X{5:8}, X{10});
+y4 = vertcat(Y{5:8}, Y{10});
+F24 = fit(x4, y4, ft2, 'Lower', [0 0])
+a4 = F24.a
+b4 = F24.b
+pctValue = 68.2;
+confI4 = confint(F24,pctValue/100);
+da4 = 0.5*(confI4(2,1) - confI4(1,1))
+db4 = 0.5*(confI4(2,2) - confI4(1,2))
+
+% Generar líneas de confianza
+N_ITER = 10000;
+ai4 = a4 + da4*randn(N_ITER,1);
+bi4 = b4 + db4*randn(N_ITER,1);
+Svals = 1:1:100;
+REi4 = (1 - ai4.*Svals.^bi4);
+hold on
+plot(Svals, F24(Svals), 'b-');
+hold on
+Ydata_plus4 = prctile(REi4, pctValue);
+Ydata_minus4 = prctile(REi4, 100-pctValue);
+x_plot4 =[Svals, fliplr(Svals)];
+y_plot4=[Ydata_minus3, fliplr(Ydata_plus4)];
+
 %% Plot confidence intervals
 fill(x_plot, y_plot,1,'facecolor', [1 0.8 0.8], 'edgecolor', 'red', 'edgealpha', 0.6, 'facealpha', 0.2, 'LineStyle',':');
 fill(x_plot2, y_plot2,1,'facecolor', [0.7 0.7 0.7], 'edgecolor', 'black', 'edgealpha', 0.6, 'facealpha', 0.2, 'LineStyle',':');
+fill(x_plot3, y_plot3,1,'facecolor', [0.7 0 0], 'edgecolor', 'black', 'edgealpha', 0.6, 'facealpha', 0.2, 'LineStyle',':');
+fill(x_plot4, y_plot4,1,'facecolor', [0.0 0 0.8], 'edgecolor', 'black', 'edgealpha', 0.6, 'facealpha', 0.2, 'LineStyle',':');
 
 % Leyenda
 tag{11} = 'Fit';
 tag{12} = 'Fit excluding Grilj (2018) data';
+tag{13} = 'Fit of EBT2 data';
+
 legend(tag, 'Location', 'SouthWest')
 title('Detail of values from the literature');
 save('literaturefit.mat','a','da','b','db','X','Y', 'a2','da2','b2','db2','x2','y2','markers');

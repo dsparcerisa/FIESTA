@@ -1,4 +1,4 @@
-function [dose, varMat] = getDoseMicke(I, CoefR, CoefG, CoefB, pixelsXCM, deltas, pxmax)
+function [dose, varMat, realDR, realDG, realDB] = getDoseMicke(I, CoefR, CoefG, CoefB, pixelsXCM, deltas, pxmax)
 
 %% Definir funciones
 DR = @(pv) CoefR(3) + CoefR(2)./(pv - CoefR(1));

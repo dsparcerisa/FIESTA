@@ -153,10 +153,10 @@ end
 
 %% Make plot
 subplot(1,2,1);
-errorbar(E_EBT3, LET_EBT3, dLET_EBT3, '.', 'Color', [0, 0.4470, 0.7410]);
+errorbar(E_EBT3, LET_EBT3, dLET_EBT3, 'o', 'Color', [0, 0.4470, 0.7410]);
 hold on
-errorbar(E_EBT2, LET_EBT2, dLET_EBT2, '.', 'Color', [0.8500, 0.3250, 0.0980]); 
-errorbar(E_EBT3unl, LET_EBT3unl, dLET_EBT3unl, '.', 'Color', [0.4660 0.6740 0.1880])
+errorbar(E_EBT2, LET_EBT2, dLET_EBT2, 'x', 'Color', [0.8500, 0.3250, 0.0980]); 
+errorbar(E_EBT3unl, LET_EBT3unl, dLET_EBT3unl, 'd', 'Color', [0.4660 0.6740 0.1880])
 
 %errorbar(E_EBT3, LETw_EBT3, dLET_EBT3, '.', 'Color', 0.5*[0, 0.4470, 0.7410]);
 %errorbar(E_EBT2, LETw_EBT2, dLET_EBT2, '.', 'Color', 0.5*[0.8500, 0.3250, 0.0980]); 
@@ -176,21 +176,21 @@ grid on
 xlabel('E on film surface (MeV)')
 set(gca, 'FontSize', 14);
 ylabel('LET in active layer (keV/µm)')
-legend('EBT3','EBT2', 'EBT3 unlaminated')
+legend('EBT3','EBT2', 'EBT3 unlaminated', 'Fit EBT3', 'Fit EBT2', 'Fit EBT3 unlaminated')
 ylim([0 70]);
 
 % Plot LET in medium VS LET in water
 subplot(1,2,2);
 ratios3 = LET_EBT3./LETw_EBT3;
 [~, o3] = sort(LET_EBT3);
-plot(LET_EBT3(o3),ratios3(o3), '-', 'Color', [0, 0.4470, 0.7410], 'LineWidth', 2);
+plot(LET_EBT3(o3),ratios3(o3), 'o-', 'Color', [0, 0.4470, 0.7410], 'LineWidth', 2);
 hold on
 ratios2 = LET_EBT2./LETw_EBT2;
 [~, o2] = sort(LET_EBT2);
-plot(LET_EBT2(o2),ratios2(o2), '-', 'Color', [0.8500, 0.3250, 0.0980], 'LineWidth', 2); 
+plot(LET_EBT2(o2),ratios2(o2), 'x-', 'Color', [0.8500, 0.3250, 0.0980], 'LineWidth', 2); 
 ratios3u = LET_EBT3unl./LETw_EBT3unl;
 [~, o3u] = sort(LET_EBT3unl);
-plot(LET_EBT3unl(o3u),ratios3u(o3u), '-', 'Color', 0.5*[0.4660 0.6740 0.1880], 'LineWidth', 2);
+plot(LET_EBT3unl(o3u),ratios3u(o3u), 'd-', 'Color', [0.4660 0.6740 0.1880], 'LineWidth', 2);
 grid on
 xlabel('LET in medium (keV/µm)')
 ylabel('LET in medium / LET in water')
