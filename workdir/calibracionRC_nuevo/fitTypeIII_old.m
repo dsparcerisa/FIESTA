@@ -22,35 +22,17 @@ ft = fittype( 'alpha.*x +beta.*x.^gamma', 'independent', 'x', 'dependent', 'y' )
 opts = fitoptions( 'Method', 'NonlinearLeastSquares' );
 %opts.Display = 'Off';
 opts.Robust = 'LAR';
+opts.Upper = [10 10 2];
+opts.Lower = [-10 -10 -2];
+opts.StartPoint = [1 1 1];
+% Fit model to data.
+[fitresult] = fit( xData, yData, ft, opts);
 
-allfits = {};
-allgofs = {};
-allN = 0.5:0.5:5;
-Rvalues = nan(size(allN));
+opts.StartPoint = coeffvalues(fitresult);
+opts.Weights = aa_errors.^(-2);
+[fitresult, gof] = fit( xData, yData, ft, opts);
+% % Plot fit with data.
 
-for i=1:numel(allN)    
-    opts.Upper = [10 10 allN(i)];
-    opts.Lower = [-10 -10 allN(i)];
-    opts.StartPoint = [1 1 allN(i)];
-    % Fit model to data.
-    [fitresult] = fit( xData, yData, ft, opts);
-    opts.StartPoint = coeffvalues(fitresult);
-    opts.Weights = aa_errors.^(-2);
-    [fitresult, gof] = fit( xData, yData, ft, opts);
-    allfits{i} = fitresult;
-    allgofs{i} = gof;
-    Rvalues(i) = gof.rsquare;   
-end
-% Plot fit with data.
-
-% figure
-% plot(allN,Rvalues,'o');
-% [bestN, bestI] = max(Rvalues);
-% n = allN(bestI)
-% 
-% fitresult = allfits{bestI};
-% gof = allgofs{bestI};
-% 
 % figure( 'Name', 'untitled fit 1' );
 % h = plot( fitresult, xData, yData );
 % hold on

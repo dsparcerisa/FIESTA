@@ -41,8 +41,8 @@ realDG = correctedDG(pvG,delta0);
 realDB = correctedDB(pvB,delta0);
 
 % Y luego teniéndolos en cuenta
-isR = double(DG(pvG)<10);
-isB = double(DG(pvG)>2);
+isR = double(realDG<10 & realDR<10);
+isB = double(realDG>2 & realDB>2);
 
 for k = 1:numel(delta)
     dev = isR.*(correctedDR(pvR,delta(k))-correctedDG(pvG,delta(k))).^2 + ...

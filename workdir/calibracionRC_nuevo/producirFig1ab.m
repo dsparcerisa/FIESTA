@@ -68,10 +68,10 @@ plot(dosePoints, fG1(dosePoints), 'g-');
 [fB1, gofB1] = fitTypeI(dosesGy(Bmask), B(Bmask), dB(Bmask));
 plot(dosePoints, fB1(dosePoints), 'b-');
 title(sprintf('%s', filmOrder{filmIndex}));
-errorbar(dosesGy, R, dR, 'r.')
+errorbar(dosesGy, R, dR, 'r.', 'MarkerSize', 10)
 hold on
-errorbar(dosesGy, G, dG, 'g.')
-errorbar(dosesGy, B, dB, 'b.')
+errorbar(dosesGy, G, dG, 'g.', 'MarkerSize', 10)
+errorbar(dosesGy, B, dB, 'b.', 'MarkerSize', 10)
 grid on
 %xlabel('Doses (Gy)')
 if (filmIndex==1)
@@ -245,17 +245,17 @@ if (filmIndex==1)
 end
 grid on
 
-[fR3, gofR3] = fitTypeIII(dosesGy(Rmask), NODR(Rmask), dNODR(Rmask));
+[fR3, gofR3] = fitTypeIII_old(dosesGy(Rmask), NODR(Rmask), dNODR(Rmask));
 plot(dosePoints, fR3(dosePoints), 'r-'); hold on
-[fG3, gofG3] = fitTypeIII(dosesGy, NODG, dNODG);
+[fG3, gofG3] = fitTypeIII_old(dosesGy, NODG, dNODG);
 plot(dosePoints, fG3(dosePoints), 'g-');
-[fB3, gofB3] = fitTypeIII(dosesGy(Bmask), NODB(Bmask), dNODB(Bmask));
+[fB3, gofB3] = fitTypeIII_old(dosesGy(Bmask), NODB(Bmask), dNODB(Bmask));
 plot(dosePoints, fB3(dosePoints), 'b-');
 
-errorbar(dosesGy, NODR, dNODR, 'r.')
+errorbar(dosesGy, NODR, dNODR, 'r.', 'MarkerSize', 10)
 hold on
-errorbar(dosesGy, NODG, dNODG, 'g.')
-errorbar(dosesGy, NODB, dNODB, 'b.')
+errorbar(dosesGy, NODG, dNODG, 'g.', 'MarkerSize', 10)
+errorbar(dosesGy, NODB, dNODB, 'b.', 'MarkerSize', 10)
 
 %title(sprintf('%s', filmOrder{filmIndex}));
 %text(1,0.5,sprintf('R^2 = %3.4f',gofR3.rsquare),'Color','red')
@@ -335,12 +335,12 @@ dNODB = (1./B./log(10)).*dB;
 xlabel('Doses (Gy)')
 grid on
 
-[fR3, gofR3] = fitTypeIII(dosesGy(Rmask), NODR(Rmask), dNODR(Rmask));
+[fR3, gofR3] = fitTypeIII_old(dosesGy(Rmask), NODR(Rmask), dNODR(Rmask));
 plot(dosePoints, fR3(dosePoints), 'r:', 'LineWidth', 2);
 hold on
-[fG3, gofG3] = fitTypeIII(dosesGy, NODG, dNODG);
+[fG3, gofG3] = fitTypeIII_old(dosesGy, NODG, dNODG);
 plot(dosePoints, fG3(dosePoints), 'g:', 'LineWidth', 2);
-[fB3, gofB3] = fitTypeIII(dosesGy(Bmask), NODB(Bmask), dNODB(Bmask));
+[fB3, gofB3] = fitTypeIII_old(dosesGy(Bmask), NODB(Bmask), dNODB(Bmask));
 plot(dosePoints, fB3(dosePoints), 'b:', 'LineWidth', 2);
 errorbar(dosesGy, NODR, dNODR, 'k.')
 errorbar(dosesGy, NODG, dNODG, 'k.')
