@@ -25,7 +25,7 @@ opts.Robust = 'LAR';
 
 allfits = {};
 allgofs = {};
-allN = 0.5:0.5:5;
+allN = 0.5:0.1:2;
 Rvalues = nan(size(allN));
 
 for i=1:numel(allN)    
@@ -43,13 +43,13 @@ for i=1:numel(allN)
 end
 % Plot fit with data.
 
-% figure
+% figure(10)
 % plot(allN,Rvalues,'o');
-% [bestN, bestI] = max(Rvalues);
-% n = allN(bestI)
+[bestN, bestI] = max(Rvalues);
+n = allN(bestI)
 % 
-% fitresult = allfits{bestI};
-% gof = allgofs{bestI};
+fitresult = allfits{bestI};
+gof = allgofs{bestI};
 % 
 % figure( 'Name', 'untitled fit 1' );
 % h = plot( fitresult, xData, yData );
