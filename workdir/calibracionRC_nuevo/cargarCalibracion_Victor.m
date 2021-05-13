@@ -137,9 +137,9 @@ for i=1:filmsPerSample
     DB1 = confint(fB1,0.683);
     dCoefB1 = 0.5*(DB1(2,:) - DB1(1,:));
 
-    plot(plotPoints, FR(plotPoints), 'r-');
-    plot(plotPoints, FG(plotPoints), 'g-');
-    plot(plotPoints, FB(plotPoints), 'b-');
+    plot(plotPoints, fR1(plotPoints), 'r-');
+    plot(plotPoints, fG1(plotPoints), 'g-');
+    plot(plotPoints, fB1(plotPoints), 'b-');
     
     title(filmOrder{i})
     grid on
@@ -155,41 +155,6 @@ for i=1:filmsPerSample
     save(saveFileName, 'CoefR1', 'CoefG1', 'CoefB1');
 end
 
-%% Test self-consistency
-autoDoses = nan(filmsPerSample, Nsamples, 4);
-autoDoseErrors = nan(filmsPerSample, Nsamples, 4);
-tic
-for i=1:filmsPerSample
-    for j=1:Nsamples
-        
-        % PV(x) = (p1*D + p2) / (D + q1)
-        % D(PV) = (q1 * PV - p2) ./ (p1 - PV);
-        % COEF= [p2 p1 q1];
-        
-        p2R = allCoefs{i, 1}(1);
-        p1R = allCoefs{i, 1}(2);
-        q1R = allCoefs{i, 1}(3);
-        
-        p2G = allCoefs{i, 2}(1);
-        p1G = allCoefs{i, 2}(2);
-        q1G = allCoefs{i, 2}(3);
-        
-        p2B = allCoefs{i, 3}(1);
-        p1B = allCoefs{i, 3}(2);
-        q1B = allCoefs{i, 3}(3);
-        
-        doseR = @(PV) (q1R.*PV - p2R) ./ (p1R - PV);
-        doseG = @(PV) (q1G.*PV - p2G) ./ (p1G - PV);
-        doseB = @(PV) (q1B.*PV - p2B) ./ (p1B - PV);
-        
-        autoDoses(i,j) = doseR(meanValues(i,j,1) / maxBits);
-        %autoDoseErrors(i,j,k) = std2(dose.data);
-        plot(dosesGy, autoDoses(i, :), 'r.'); hold on
-        
-        autoDoses(i,j) = doseG(meanValues(i,j,2) / maxBits);
-        %autoDoseErrors(i,j,k) = std2(dose.data);
-        plot(dosesGy, autoDoses(i, :), 'g.'); hold on
-        
         autoDoses(i,j) = doseB(meanValues(i,j,3) / maxBits);
         %autoDoseErrors(i,j,k) = std2(dose.data);
         plot(dosesGy, autoDoses(i, :), 'b.'); hold on
