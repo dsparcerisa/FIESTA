@@ -54,8 +54,8 @@ end
 save('basicData_Medicina_SCANNED.mat');
 
 %% Study 1. Variability between scans
-meanValues = nan(Nsamples, filmsPerSample, 3);
-stdValues = nan(Nsamples, filmsPerSample, 3);
+meanValues = nan(filmsPerSample, Nsamples, 3);
+stdValues = nan(filmsPerSample, Nsamples, 3);
 for i=1:filmsPerSample
     for j=1:Nsamples
         for l=1:3
@@ -113,17 +113,29 @@ for i=1:filmsPerSample
     errorbar(dosesGy, finalPixelValues(i,:,2), finalPixelErrValues(i,:,2), 'g.');
     errorbar(dosesGy, finalPixelValues(i,:,3), finalPixelErrValues(i,:,3), 'b.');
 
-    % Find calibration
-    FR = fit(dosesGy', finalPixelValues(i,:,1)', 'rat11');
-    CoefR = [FR.p2 FR.p1 FR.q1];
-    FG = fit(dosesGy', finalPixelValues(i,:,2)', 'rat11');
-    CoefG = [FG.p2 FG.p1 FG.q1];
-    FB = fit(dosesGy', finalPixelValues(i,:,3)', 'rat11'); 
-    CoefB = [FB.p2 FB.p1 FB.q1];
+    R = finalPixelValues(i,:,1);
+    G = finalPixelValues(i,:,2);
+    B = finalPixelValues(i,:,3);
+    dR = finalPixelErrValues(i,:,1);
+    dG = finalPixelErrValues(i,:,2);
+    dB = finalPixelErrValues(i,:,3);
+    dosePoints = 0:0.1:(round(max(dosesGy)));
     
-    allCoefs{i, 1} = CoefR;
-    allCoefs{i, 2} = CoefG;
-    allCoefs{i, 3} = CoefB;
+    %% Fit type I
+    [fR1, gofR1] = fitTypeI(dosesGy, R, dR)
+    [fG1, gofG1] = fitTypeI(dosesGy, G, dG)
+    [fB1, gofB1] = fitTypeI(dosesGy, B, dB)
+    
+    CoefR1 = [fR1.alpha fR1.beta fR1.gamma];
+    CoefG1 = [fG1.alpha fG1.beta fG1.gamma];
+    CoefB1 = [fB1.alpha fB1.beta fB1.gamma];
+
+    DR1 = confint(fR1,0.683);
+    dCoefR1 = 0.5*(DR1(2,:) - DR1(1,:));   
+    DG1 = confint(fG1,0.683);
+    dCoefG1 = 0.5*(DG1(2,:) - DG1(1,:));
+    DB1 = confint(fB1,0.683);
+    dCoefB1 = 0.5*(DB1(2,:) - DB1(1,:));
 
     plot(plotPoints, FR(plotPoints), 'r-');
     plot(plotPoints, FG(plotPoints), 'g-');
@@ -140,12 +152,12 @@ for i=1:filmsPerSample
     %saveFileName = ['CoefFitHF_' filmOrder{i} '.mat'];  
     saveFileName = ['CoefFitMedicina_' filmOrder{i} '.mat']; 
 
-    save(saveFileName, 'CoefR', 'CoefG', 'CoefB');
+    save(saveFileName, 'CoefR1', 'CoefG1', 'CoefB1');
 end
 
-%% Test self-consistency (without using delta Method)
-autoDoses = nan(filmsPerSample, Nsamples, scansPerSample);
-autoDoseErrors = nan(filmsPerSample, Nsamples, scansPerSample);
+%% Test self-consistency
+autoDoses = nan(filmsPerSample, Nsamples, 4);
+autoDoseErrors = nan(filmsPerSample, Nsamples, 4);
 tic
 for i=1:filmsPerSample
     for j=1:Nsamples
