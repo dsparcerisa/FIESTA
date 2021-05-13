@@ -2,8 +2,8 @@
 clear all; close all
 
 % Choose dataset
-%filmIndex = 3; % EBT2,2=EBT3,3=EBT3unl
-dataIndex = 1; % 1=HF fotones, 2=FQS protones
+filmIndex = 2; % EBT2,2=EBT3,3=EBT3unl
+dataIndex = 3; % 1=HF fotones, 2=FQS protones, 3=Medicina
 
 for filmIndex=1:3
 subplot(1,3,filmIndex)
@@ -12,6 +12,8 @@ if dataIndex==1
     load('basicData_HF.mat', 'filmsPerSample', 'Nsamples', 'scansPerSample', 'imageSubsets', 'maxBits', 'dosesGy', 'filmOrder');
 elseif dataIndex==2
     load('basicData_FQS.mat', 'filmsPerSample', 'Nsamples', 'scansPerSample', 'imageSubsets', 'maxBits', 'dosesGy', 'filmOrder');
+elseif dataIndex==3
+    load('basicData_Medicina_SCANNED.mat', 'filmsPerSample', 'Nsamples', 'scansPerSample', 'imageSubsets', 'maxBits', 'dosesGy', 'filmOrder');
 else
     error('No data available.');
 end

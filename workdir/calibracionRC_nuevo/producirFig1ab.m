@@ -1,3 +1,5 @@
+elseif dataIndex==3
+    load('basicData_Medicina_SCANNED.mat', 'filmsPerSample', 'Nsamples', 'scansPerSample', 'imageSubsets', 'maxBits', 'dosesGy', 'filmOrder');
 %% Abrir todos los archivos
 clear all; close all
 

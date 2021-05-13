@@ -3,7 +3,7 @@
 clear all
 
 %% Primero lo hacemos con la calibración de FQS
-basePath = '/Users/dani/Google Drive/Trabajo/UCM/01-Proyectos/24-Experimentos CMAM/04-Radiocromicas/20_07_23 - Calibracion en FQS'
+basePath = '/Users/dani/Google Drive/UCM/01-Proyectos/24-Experimentos CMAM/04-Radiocromicas/20_07_23 - Calibracion en FQS'
 Nsamples = 10;
 MU = [0 443 887 1330 1774 3548 5322 7095 8869 10643];
 % 1681 MU = 1.8953 Gy (valores de FQS)
