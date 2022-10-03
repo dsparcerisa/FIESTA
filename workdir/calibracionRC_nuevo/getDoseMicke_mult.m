@@ -1,4 +1,4 @@
-function [dose, varMat] = getDoseMicke_mult(I, CoefR, CoefG, CoefB, pixelsXCM, deltas, pxmax)
+function [dose, varMat, realDR, realDG, realDB] = getDoseMicke_mult(I, CoefR, CoefG, CoefB, pixelsXCM, deltas, pxmax)
 
 
 %% Definir funciones
