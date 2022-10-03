@@ -30,6 +30,18 @@ elseif strcmp(plan.mode,'CONV')
         fprintf(ID, '%3.2f, %3.2f, %3.2f, %3.3f\n', plan.X(i), plan.Y(i), plan.Z(i), plan.t_s(i));
     end    
     
+elseif strcmp(plan.mode,'TRIG')
+    
+    % Write header
+    fprintf(ID, '# E (MeV), I (nA), widthT_us, numSpots\n');
+    fprintf(ID, '%3.2f, %3.3f, %s, %u\n', plan.E, plan.I, plan.widthT_us, plan.numSpots);
+    
+    % Write table
+    fprintf(ID, ['# X (cm)' ...
+        ', Y (cm), Z (cm), t(s)\n']);
+    for i=1:plan.numSpots
+        fprintf(ID, '%3.2f, %3.2f, %3.2f, %3.3f, %u\n', plan.X(i), plan.Y(i), plan.Z(i), plan.T_out_us(i), plan.Nshots(i));
+    end        
 else
     fclose(ID);
     error('Unrecognized plan type (%s)', plan.mode);
