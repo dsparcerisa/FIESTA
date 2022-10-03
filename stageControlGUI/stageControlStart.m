@@ -1,4 +1,5 @@
 function stageControlStart(COM)
+global Fcfg
 if ~exist('COM')
     instrreset
     %% Connect
