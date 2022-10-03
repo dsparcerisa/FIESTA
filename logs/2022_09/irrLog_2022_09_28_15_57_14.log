@@ -1,0 +1,36 @@
+[15:57:14.652] Starting plan irradiation...
+	Plan name: Plan de commissioning para TRIG
+	Plan comment: pruebaX
+	Plan type: TRIG
+	Arduino high time in us: 
+
+	Air depth at stage position Z=0: 0.00 cm
+	Absolut shift from X to (0,0) well: [0.000 0.000 0.000]
+	Current intensity: 0.000 nA (planned for 10.000 nA)
+
+[15:57:24.255] Moving to: [0.000 0.000 0.000]
+[15:57:35.238] Moving to: [0.000 0.000 0.000]
+[15:57:35.491] Arrived at: [0.000 0.000 0.000]
+[15:57:35.491] Sending trigger signal for 1 shots with 10000.000 us distance
+[15:57:36.755] Pu
+[15:57:36.755] Moving to: [0.000 -2.000 0.000]
+[15:57:38.754] Arrived at: [0.000 -2.000 0.000]
+[15:57:38.754] Sending trigger signal for 2 shots with 10000.000 us distance
+[15:57:40.019] Pulsedfinished
+[15:57:40.019] Moving to: [0.000 -4.000 0.000]
+[15:57:41.991] Arrived at: [0.000 -4.000 0.000]
+[15:57:41.991] Sending trigger signal for 3 shots with 10000.000 us distance
+[15:57:43.251] Pulsedfinish
+[15:57:43.252] Moving to: [0.000 0.000 2.000]
+[15:57:48.279] Arrived at: [0.000 0.000 2.000]
+[15:57:48.279] Sending trigger signal for 4 shots with 10000.000 us distance
+[15:57:49.537] 10
+[15:57:49.538] Moving to: [0.000 -2.000 2.000]
+[15:57:51.527] Arrived at: [0.000 -2.000 2.000]
+[15:57:51.527] Sending trigger signal for 5 shots with 10000.000 us distance
+[15:57:52.785] 10
+[15:57:52.786] Moving to: [0.000 -4.000 2.000]
+[15:57:54.780] Arrived at: [0.000 -4.000 2.000]
+[15:57:54.780] Sending trigger signal for 6 shots with 10000.000 us distance
+[15:57:56.044] 10
+[15:57:56.044] Plan irradiation finished.

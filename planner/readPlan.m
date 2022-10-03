@@ -14,6 +14,8 @@ if strcmp(planType, 'FLASH')
     disp('FLASH type plan');
 elseif strcmp(planType, 'CONV')
     disp('CONV type plan');   
+elseif strcmp(planType, 'TRIG')
+    disp('TRIG type plan');
 else
     error('Unrecognized plan type (%s)', planType);
 end
@@ -35,6 +37,9 @@ elseif strcmp(planType, 'CONV')
     opts.VariableTypes = ["double", "double", "string", "uint16"];
     opts = setvaropts(opts, "codFiltro", "WhitespaceRule", "trim");
     opts = setvaropts(opts, "codFiltro", "EmptyFieldRule", "auto");
+elseif strcmp(planType, 'TRIG')
+    opts.VariableNames = ["EMeV", "InA", "widthT_us", "numSpots"];
+    opts.VariableTypes = ["double", "double", "double", "uint16"];
 else
     error('Unrecognized plan type (%s)', planType);
 end
@@ -66,6 +71,9 @@ if strcmp(planType, 'FLASH')
 elseif strcmp(planType, 'CONV')
     opts.VariableNames = ["Xcm", "Ycm", "Zcm", "Ts"];
     opts.VariableTypes = ["double", "double", "double", "double"];
+elseif strcmp(planType, 'TRIG')
+    opts.VariableNames = ["Xcm", "Ycm", "Zcm", "T_out_us", "Nshots"];
+    opts.VariableTypes = ["double", "double", "double", "double", "uint16"];
 else
     error('Unrecognized plan type (%s)', planType);
 end
@@ -84,6 +92,10 @@ if strcmp(planType, 'FLASH')
 elseif strcmp(planType, 'CONV')
     plan.codFiltro = header.codFiltro;
     plan.t_s = dataTable.Ts;    
+elseif strcmp(planType, 'TRIG')
+    plan.widthT_us = header.widthT_us;
+    plan.Nshots = dataTable.Nshots;        
+    plan.T_out_us = dataTable.T_out_us;    
 else
     error('Unrecognized plan type (%s)', planType);
 end

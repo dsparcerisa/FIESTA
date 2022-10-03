@@ -30,6 +30,17 @@ elseif strcmp(plan.mode, 'CONV')
         isInvalid = true;
         return;
     end
+elseif strcmp(plan.mode, 'TRIG')
+    if ~isfield(plan, 'Nshots') || numel(plan.Nshots) ~= plan.numSpots || ~(plan.widthT_us>0)
+        isInvalid = true;
+        return;
+    end
+
+    if ~all(plan.Nshots >= 0)
+        isInvalid = true;
+        return;
+    end
+
 else
     isInvalid = true;
     return;

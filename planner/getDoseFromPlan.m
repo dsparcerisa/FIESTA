@@ -25,7 +25,8 @@ elseif strcmp(plan.mode, 'CONV')
     end
 
     plan.Q = plan.I * factorImuestra * factorPP * plan.t_s * 1000;
-
+elseif strcmp(plan.mode, 'TRIG')
+     error('Function getDoseFromPlan not implemented for TRIG type plans');
 else
     error('Plan mode %s not recognized', plan.mode);
 end

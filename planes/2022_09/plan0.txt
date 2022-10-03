@@ -1,0 +1,11 @@
+# Plan de commissioning para TRIG
+TRIG
+# E (MeV), I (nA), widthT_us, numSpots
+8, 10.0, 10, 6
+# X (cm), Y (cm), Z(cm), t_out (us), Nshots
+0, 0, 0, 1000, 1
+0, -2, 0, 1000, 2
+0, -4, 0, 1000, 3
+0, 0, 2, 1000, 4
+0, -2, 2, 1000, 5
+0, -4, 2, 1000, 6
