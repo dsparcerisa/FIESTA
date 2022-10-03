@@ -1,0 +1,44 @@
+[16:02:25.412] Starting plan irradiation...
+	Plan name: Plan de commissioning para TRIG
+	Plan comment: prueba sin haz
+	Plan type: TRIG
+	Arduino high time in us: 
+
+	Air depth at stage position Z=0: 3.00 cm
+	Absolut shift from X to (0,0) well: [0.000 -2.500 2.000]
+	Current intensity: 0.000 nA (planned for 48.000 nA)
+
+[16:02:32.539] Moving to: [-3.500 -2.500 2.900]
+[16:02:38.532] Moving to: [-3.500 -2.500 2.900]
+[16:02:38.781] Arrived at: [-3.500 -2.500 2.900]
+[16:02:38.782] Sending trigger signal for 100 shots with 300.000 us distance
+[16:02:40.043] 10
+[16:02:40.044] Moving to: [-3.500 -4.300 2.900]
+[16:02:41.863] Arrived at: [-3.500 -4.300 2.900]
+[16:02:41.864] Sending trigger signal for 200 shots with 300.000 us distance
+[16:02:43.161] 10
+[16:02:43.162] Moving to: [-3.500 -6.100 2.900]
+[16:02:44.969] Arrived at: [-3.500 -6.100 2.900] WARNING!
+[16:02:44.969] Sending trigger signal for 300 shots with 300.000 us distance
+[16:02:46.314] 10
+[16:02:46.315] Moving to: [-3.500 -7.900 2.900]
+[16:02:47.733] Arrived at: [-3.500 -7.203 2.900] WARNING!
+[16:02:47.733] Sending trigger signal for 400 shots with 300.000 us distance
+[16:02:49.120] 10
+[16:02:49.122] Moving to: [-3.500 -2.500 4.700]
+[16:02:54.339] Arrived at: [-3.500 -2.500 4.700]
+[16:02:54.339] Sending trigger signal for 100 shots with 300.000 us distance
+[16:02:55.610] 10
+[16:02:55.610] Moving to: [-3.500 -4.300 4.700]
+[16:02:57.401] Arrived at: [-3.500 -4.300 4.700]
+[16:02:57.401] Sending trigger signal for 200 shots with 300.000 us distance
+[16:02:58.712] 10
+[16:02:58.712] Moving to: [-3.500 -6.100 4.700]
+[16:03:00.510] Arrived at: [-3.500 -6.100 4.700] WARNING!
+[16:03:00.510] Sending trigger signal for 300 shots with 300.000 us distance
+[16:03:01.867] 10
+[16:03:01.868] Moving to: [-3.500 -7.900 4.700]
+[16:03:03.297] Arrived at: [-3.500 -7.195 4.700] WARNING!
+[16:03:03.297] Sending trigger signal for 400 shots with 300.000 us distance
+[16:03:04.662] 10
+[16:03:04.663] Plan irradiation finished.
