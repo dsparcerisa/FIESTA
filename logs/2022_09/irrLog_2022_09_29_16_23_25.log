@@ -1,0 +1,984 @@
+[16:23:25.401] Starting plan irradiation...
+	Plan name: Plan de commissioning para TRIG
+	Plan comment: prueba sin haz
+	Plan type: TRIG
+	Arduino high time in us: 
+
+	Air depth at stage position Z=0: 3.00 cm
+	Absolut shift from X to (0,0) well: [-0.500 -4.500 4.500]
+	Current intensity: 10.000 nA (planned for 10.000 nA)
+
+[16:23:42.815] Moving to: [-0.500 -4.300 0.100]
+[16:23:44.727] Moving to: [-0.500 -4.300 0.100]
+[16:23:45.222] Arrived at: [-0.500 -4.300 0.100] WARNING!
+[16:23:45.222] Sending trigger signal for 2 shots with 300.000 us distance
+[16:23:46.287] 10
+[16:23:46.288] Moving to: [-0.500 -4.100 0.500]
+[16:23:47.604] Arrived at: [-0.500 -4.100 0.500]
+[16:23:47.605] Sending trigger signal for 2 shots with 300.000 us distance
+[16:23:48.674] 10
+[16:23:48.674] Moving to: [-0.500 -3.900 0.700]
+[16:23:49.795] Arrived at: [-0.500 -3.900 0.700] WARNING!
+[16:23:49.795] Sending trigger signal for 3 shots with 300.000 us distance
+[16:23:50.858] 10
+[16:23:50.859] Moving to: [-0.500 -3.700 0.900]
+[16:23:51.973] Arrived at: [-0.500 -3.700 0.900] WARNING!
+[16:23:51.973] Sending trigger signal for 2 shots with 300.000 us distance
+[16:23:53.035] 10
+[16:23:53.035] Moving to: [-0.500 -3.900 0.900]
+[16:23:53.973] Arrived at: [-0.500 -3.900 0.900] WARNING!
+[16:23:53.973] Sending trigger signal for 2 shots with 300.000 us distance
+[16:23:55.052] 10
+[16:23:55.052] Moving to: [-0.500 -3.700 1.100]
+[16:23:56.173] Arrived at: [-0.500 -3.700 1.100]
+[16:23:56.174] Sending trigger signal for 3 shots with 300.000 us distance
+[16:23:57.229] 10
+[16:23:57.229] Moving to: [-0.500 -3.500 1.300]
+[16:23:58.332] Arrived at: [-0.500 -3.500 1.300] WARNING!
+[16:23:58.333] Sending trigger signal for 2 shots with 300.000 us distance
+[16:23:59.385] 10
+[16:23:59.385] Moving to: [-0.500 -3.700 1.300]
+[16:24:00.316] Arrived at: [-0.500 -3.700 1.300] WARNING!
+[16:24:00.316] Sending trigger signal for 2 shots with 300.000 us distance
+[16:24:01.368] 10
+[16:24:01.369] Moving to: [-0.500 -3.500 1.500]
+[16:24:02.478] Arrived at: [-0.500 -3.500 1.500]
+[16:24:02.479] Sending trigger signal for 3 shots with 300.000 us distance
+[16:24:03.538] 10
+[16:24:03.538] Moving to: [-0.500 -3.300 1.700]
+[16:24:04.638] Arrived at: [-0.500 -3.300 1.700] WARNING!
+[16:24:04.638] Sending trigger signal for 2 shots with 300.000 us distance
+[16:24:05.703] 10
+[16:24:05.703] Moving to: [-0.500 -3.500 1.700]
+[16:24:06.631] Arrived at: [-0.500 -3.500 1.700] WARNING!
+[16:24:06.631] Sending trigger signal for 2 shots with 300.000 us distance
+[16:24:07.678] 10
+[16:24:07.678] Moving to: [-0.500 -3.300 1.900]
+[16:24:08.774] Arrived at: [-0.500 -3.300 1.900] WARNING!
+[16:24:08.775] Sending trigger signal for 2 shots with 300.000 us distance
+[16:24:09.822] 10
+[16:24:09.823] Moving to: [-0.500 -3.100 2.100]
+[16:24:10.930] Arrived at: [-0.500 -3.100 2.100]
+[16:24:10.931] Sending trigger signal for 2 shots with 300.000 us distance
+[16:24:11.984] 10
+[16:24:11.985] Moving to: [-0.500 -3.300 2.100]
+[16:24:12.660] Arrived at: [-0.500 -3.300 2.100] WARNING!
+[16:24:12.660] Sending trigger signal for 2 shots with 300.000 us distance
+[16:24:13.710] 10
+[16:24:13.711] Moving to: [-0.500 -3.100 2.300]
+[16:24:14.899] Arrived at: [-0.500 -3.100 2.300] WARNING!
+[16:24:14.899] Sending trigger signal for 3 shots with 300.000 us distance
+[16:24:15.967] 10
+[16:24:15.969] Moving to: [-0.500 -4.300 2.300]
+[16:24:17.626] Arrived at: [-0.500 -4.300 2.300] WARNING!
+[16:24:17.626] Sending trigger signal for 2 shots with 300.000 us distance
+[16:24:18.685] 10
+[16:24:18.686] Moving to: [-0.500 -4.500 2.300]
+[16:24:19.630] Arrived at: [-0.500 -4.500 2.300] WARNING!
+[16:24:19.630] Sending trigger signal for 3 shots with 300.000 us distance
+[16:24:20.689] 10
+[16:24:20.689] Moving to: [-0.500 -4.700 2.300]
+[16:24:21.612] Arrived at: [-0.500 -4.700 2.300] WARNING!
+[16:24:21.612] Sending trigger signal for 3 shots with 300.000 us distance
+[16:24:22.667] 10
+[16:24:22.673] Moving to: [-0.500 -4.900 2.300]
+[16:24:23.603] Arrived at: [-0.500 -4.900 2.300] WARNING!
+[16:24:23.603] Sending trigger signal for 2 shots with 300.000 us distance
+[16:24:24.667] 10
+[16:24:24.667] Moving to: [-0.500 -5.100 2.300]
+[16:24:25.650] Arrived at: [-0.500 -5.100 2.300] WARNING!
+[16:24:25.651] Sending trigger signal for 2 shots with 300.000 us distance
+[16:24:26.711] 10
+[16:24:26.712] Moving to: [-0.500 -5.300 2.300]
+[16:24:27.645] Arrived at: [-0.500 -5.300 2.300] WARNING!
+[16:24:27.645] Sending trigger signal for 3 shots with 300.000 us distance
+[16:24:28.719] 10
+[16:24:28.719] Moving to: [-0.500 -5.500 2.300]
+[16:24:29.642] Arrived at: [-0.500 -5.500 2.300] WARNING!
+[16:24:29.642] Sending trigger signal for 3 shots with 300.000 us distance
+[16:24:30.692] 10
+[16:24:30.692] Moving to: [-0.500 -5.700 2.300]
+[16:24:31.634] Arrived at: [-0.500 -5.700 2.300] WARNING!
+[16:24:31.634] Sending trigger signal for 3 shots with 300.000 us distance
+[16:24:32.700] 10
+[16:24:32.701] Moving to: [-0.500 -6.700 2.300]
+[16:24:34.181] Arrived at: [-0.500 -6.700 2.300] WARNING!
+[16:24:34.181] Sending trigger signal for 3 shots with 300.000 us distance
+[16:24:35.241] 10
+[16:24:35.241] Moving to: [-0.500 -3.100 2.500]
+[16:24:38.767] Arrived at: [-0.500 -3.100 2.500]
+[16:24:38.767] Sending trigger signal for 2 shots with 300.000 us distance
+[16:24:39.832] 10
+[16:24:39.832] Moving to: [-0.500 -4.100 2.500]
+[16:24:41.048] Arrived at: [-0.500 -4.100 2.500]
+[16:24:41.049] Sending trigger signal for 2 shots with 300.000 us distance
+[16:24:42.106] 10
+[16:24:42.107] Moving to: [-0.500 -4.300 2.500]
+[16:24:42.787] Arrived at: [-0.500 -4.300 2.500]
+[16:24:42.787] Sending trigger signal for 2 shots with 300.000 us distance
+[16:24:43.859] 10
+[16:24:43.859] Moving to: [-0.500 -5.700 2.500]
+[16:24:45.451] Arrived at: [-0.500 -5.700 2.500]
+[16:24:45.452] Sending trigger signal for 3 shots with 300.000 us distance
+[16:24:46.509] 10
+[16:24:46.509] Moving to: [-0.500 -5.900 2.500]
+[16:24:47.180] Arrived at: [-0.500 -5.900 2.500]
+[16:24:47.181] Sending trigger signal for 2 shots with 300.000 us distance
+[16:24:48.248] 10
+[16:24:48.249] Moving to: [-0.500 -6.700 2.500]
+[16:24:49.476] Arrived at: [-0.500 -6.700 2.500]
+[16:24:49.476] Sending trigger signal for 3 shots with 300.000 us distance
+[16:24:50.563] 10
+[16:24:50.563] Moving to: [-0.500 -2.900 2.700]
+[16:24:54.095] Arrived at: [-0.500 -2.900 2.700]
+[16:24:54.096] Sending trigger signal for 2 shots with 300.000 us distance
+[16:24:55.159] 10
+[16:24:55.159] Moving to: [-0.500 -4.100 2.700]
+[16:24:56.590] Arrived at: [-0.500 -4.100 2.700]
+[16:24:56.591] Sending trigger signal for 3 shots with 300.000 us distance
+[16:24:57.664] 10
+[16:24:57.664] Moving to: [-0.500 -5.700 2.700]
+[16:24:59.280] Arrived at: [-0.500 -5.700 2.700]
+[16:24:59.280] Sending trigger signal for 2 shots with 300.000 us distance
+[16:25:00.338] 10
+[16:25:00.338] Moving to: [-0.500 -5.900 2.700]
+[16:25:01.008] Arrived at: [-0.500 -5.900 2.700]
+[16:25:01.009] Sending trigger signal for 2 shots with 300.000 us distance
+[16:25:02.083] 10
+[16:25:02.083] Moving to: [-0.500 -6.700 2.700]
+[16:25:03.317] Arrived at: [-0.500 -6.700 2.700]
+[16:25:03.318] Sending trigger signal for 3 shots with 300.000 us distance
+[16:25:04.376] 10
+[16:25:04.377] Moving to: [-0.500 -2.900 2.900]
+[16:25:07.922] Arrived at: [-0.500 -2.900 2.900]
+[16:25:07.923] Sending trigger signal for 2 shots with 300.000 us distance
+[16:25:08.980] 10
+[16:25:08.980] Moving to: [-0.500 -3.900 2.900]
+[16:25:10.217] Arrived at: [-0.500 -3.900 2.900]
+[16:25:10.218] Sending trigger signal for 2 shots with 300.000 us distance
+[16:25:11.277] 10
+[16:25:11.278] Moving to: [-0.500 -4.100 2.900]
+[16:25:11.954] Arrived at: [-0.500 -4.100 2.900]
+[16:25:11.954] Sending trigger signal for 3 shots with 300.000 us distance
+[16:25:13.011] 10
+[16:25:13.012] Moving to: [-0.500 -5.500 2.900]
+[16:25:14.591] Arrived at: [-0.500 -5.500 2.900]
+[16:25:14.591] Sending trigger signal for 2 shots with 300.000 us distance
+[16:25:15.650] 10
+[16:25:15.651] Moving to: [-0.500 -5.700 2.900]
+[16:25:16.322] Arrived at: [-0.500 -5.700 2.900]
+[16:25:16.323] Sending trigger signal for 3 shots with 300.000 us distance
+[16:25:17.384] 10
+[16:25:17.385] Moving to: [-0.500 -6.500 2.900]
+[16:25:18.628] Arrived at: [-0.500 -6.500 2.900]
+[16:25:18.629] Sending trigger signal for 2 shots with 300.000 us distance
+[16:25:19.691] 10
+[16:25:19.692] Moving to: [-0.500 -6.700 2.900]
+[16:25:20.382] Arrived at: [-0.500 -6.700 2.900]
+[16:25:20.382] Sending trigger signal for 3 shots with 300.000 us distance
+[16:25:21.435] 10
+[16:25:21.435] Moving to: [-0.500 -2.900 3.100]
+[16:25:24.964] Arrived at: [-0.500 -2.900 3.100]
+[16:25:24.965] Sending trigger signal for 3 shots with 300.000 us distance
+[16:25:26.031] 10
+[16:25:26.031] Moving to: [-0.500 -4.100 3.100]
+[16:25:27.466] Arrived at: [-0.500 -4.100 3.100]
+[16:25:27.467] Sending trigger signal for 3 shots with 300.000 us distance
+[16:25:28.520] 10
+[16:25:28.521] Moving to: [-0.500 -4.300 3.100]
+[16:25:29.202] Arrived at: [-0.500 -4.300 3.100]
+[16:25:29.203] Sending trigger signal for 3 shots with 300.000 us distance
+[16:25:30.265] 10
+[16:25:30.265] Moving to: [-0.500 -4.500 3.100]
+[16:25:30.953] Arrived at: [-0.500 -4.500 3.100]
+[16:25:30.954] Sending trigger signal for 3 shots with 300.000 us distance
+[16:25:32.002] 10
+[16:25:32.002] Moving to: [-0.500 -4.700 3.100]
+[16:25:32.679] Arrived at: [-0.500 -4.700 3.100]
+[16:25:32.680] Sending trigger signal for 3 shots with 300.000 us distance
+[16:25:33.730] 10
+[16:25:33.731] Moving to: [-0.500 -4.900 3.100]
+[16:25:34.404] Arrived at: [-0.500 -4.900 3.100]
+[16:25:34.405] Sending trigger signal for 3 shots with 300.000 us distance
+[16:25:35.455] 10
+[16:25:35.457] Moving to: [-0.500 -5.100 3.100]
+[16:25:36.112] Arrived at: [-0.500 -5.100 0.310] WARNING!
+[16:25:36.113] Sending trigger signal for 3 shots with 300.000 us distance
+[16:25:37.178] 10
+[16:25:37.179] Moving to: [-0.500 -5.300 3.100]
+[16:25:37.922] Arrived at: [-0.500 -5.300 3.100]
+[16:25:37.922] Sending trigger signal for 3 shots with 300.000 us distance
+[16:25:38.981] 10
+[16:25:38.982] Moving to: [-0.500 -5.500 3.100]
+[16:25:39.668] Arrived at: [-0.500 -5.500 3.100]
+[16:25:39.669] Sending trigger signal for 3 shots with 300.000 us distance
+[16:25:40.732] 10
+[16:25:40.732] Moving to: [-0.500 -5.700 3.100]
+[16:25:41.408] Arrived at: [-0.500 -5.700 3.100]
+[16:25:41.409] Sending trigger signal for 3 shots with 300.000 us distance
+[16:25:42.471] 10
+[16:25:42.473] Moving to: [-0.500 -5.900 3.100]
+[16:25:43.129] Arrived at: [-0.500 -5.900 3.100]
+[16:25:43.130] Sending trigger signal for 3 shots with 300.000 us distance
+[16:25:44.190] 10
+[16:25:44.191] Moving to: [-0.500 -6.100 3.100]
+[16:25:44.867] Arrived at: [-0.500 -6.100 3.100] WARNING!
+[16:25:44.867] Sending trigger signal for 3 shots with 300.000 us distance
+[16:25:45.929] 10
+[16:25:45.929] Moving to: [-0.500 -6.300 3.100]
+[16:25:46.608] Arrived at: [-0.500 -6.300 3.100]
+[16:25:46.609] Sending trigger signal for 3 shots with 300.000 us distance
+[16:25:47.668] 10
+[16:25:47.668] Moving to: [-0.500 -6.500 3.100]
+[16:25:48.326] Arrived at: [-0.500 -6.500 3.100]
+[16:25:48.326] Sending trigger signal for 2 shots with 300.000 us distance
+[16:25:49.397] 10
+[16:25:49.397] Moving to: [-0.500 -2.700 3.300]
+[16:25:52.919] Arrived at: [-0.500 -2.700 3.300] WARNING!
+[16:25:52.919] Sending trigger signal for 2 shots with 300.000 us distance
+[16:25:53.979] 10
+[16:25:53.979] Moving to: [-0.500 -2.900 3.300]
+[16:25:54.909] Arrived at: [-0.500 -2.900 3.300] WARNING!
+[16:25:54.909] Sending trigger signal for 2 shots with 300.000 us distance
+[16:25:55.960] 10
+[16:25:55.960] Moving to: [-0.500 -2.700 3.500]
+[16:25:57.132] Arrived at: [-0.500 -0.027 3.500] WARNING!
+[16:25:57.132] Sending trigger signal for 2 shots with 300.000 us distance
+[16:25:58.195] 10
+[16:25:58.195] Moving to: [-0.500 -2.700 3.700]
+[16:25:58.876] Arrived at: [-0.500 -2.700 3.700]
+[16:25:58.877] Sending trigger signal for 2 shots with 300.000 us distance
+[16:25:59.955] 10
+[16:25:59.956] Moving to: [-0.500 -3.700 3.700]
+[16:26:01.198] Arrived at: [-0.500 -3.700 3.700]
+[16:26:01.199] Sending trigger signal for 2 shots with 300.000 us distance
+[16:26:02.264] 10
+[16:26:02.264] Moving to: [-0.500 -3.900 3.700]
+[16:26:02.932] Arrived at: [-0.500 -3.900 3.700]
+[16:26:02.932] Sending trigger signal for 3 shots with 300.000 us distance
+[16:26:03.992] 10
+[16:26:03.993] Moving to: [-0.500 -4.100 3.700]
+[16:26:04.675] Arrived at: [-0.500 -4.100 3.700]
+[16:26:04.675] Sending trigger signal for 3 shots with 300.000 us distance
+[16:26:05.739] 10
+[16:26:05.740] Moving to: [-0.500 -4.300 3.700]
+[16:26:06.423] Arrived at: [-0.500 -4.300 3.700]
+[16:26:06.424] Sending trigger signal for 3 shots with 300.000 us distance
+[16:26:07.483] 10
+[16:26:07.484] Moving to: [-0.500 -4.500 3.700]
+[16:26:08.159] Arrived at: [-0.500 -4.500 3.700]
+[16:26:08.160] Sending trigger signal for 2 shots with 300.000 us distance
+[16:26:09.211] 10
+[16:26:09.211] Moving to: [-0.500 -4.700 3.700]
+[16:26:09.889] Arrived at: [-0.500 -4.700 3.700]
+[16:26:09.890] Sending trigger signal for 2 shots with 300.000 us distance
+[16:26:10.946] 10
+[16:26:10.946] Moving to: [-0.500 -4.900 3.700]
+[16:26:11.620] Arrived at: [-0.500 -4.900 3.700]
+[16:26:11.621] Sending trigger signal for 2 shots with 300.000 us distance
+[16:26:12.680] 10
+[16:26:12.680] Moving to: [-0.500 -5.100 3.700]
+[16:26:13.365] Arrived at: [-0.500 -5.100 3.700] WARNING!
+[16:26:13.365] Sending trigger signal for 3 shots with 300.000 us distance
+[16:26:14.428] 10
+[16:26:14.429] Moving to: [-0.500 -5.300 3.700]
+[16:26:15.098] Arrived at: [-0.500 -5.300 3.700]
+[16:26:15.099] Sending trigger signal for 2 shots with 300.000 us distance
+[16:26:16.162] 10
+[16:26:16.162] Moving to: [-0.500 -5.500 3.700]
+[16:26:16.849] Arrived at: [-0.500 -5.500 3.700]
+[16:26:16.849] Sending trigger signal for 3 shots with 300.000 us distance
+[16:26:17.895] 10
+[16:26:17.896] Moving to: [-0.500 -5.700 3.700]
+[16:26:18.569] Arrived at: [-0.500 -5.700 3.700]
+[16:26:18.570] Sending trigger signal for 3 shots with 300.000 us distance
+[16:26:19.629] 10
+[16:26:19.630] Moving to: [-0.500 -2.500 3.900]
+[16:26:22.772] Arrived at: [-0.500 -2.500 3.900]
+[16:26:22.773] Sending trigger signal for 2 shots with 300.000 us distance
+[16:26:23.829] 10
+[16:26:23.829] Moving to: [-0.500 -2.700 3.900]
+[16:26:24.507] Arrived at: [-0.500 -2.700 3.900]
+[16:26:24.508] Sending trigger signal for 2 shots with 300.000 us distance
+[16:26:25.572] 10
+[16:26:25.572] Moving to: [-0.500 -3.100 3.900]
+[16:26:26.414] Arrived at: [-0.500 -3.100 3.900]
+[16:26:26.415] Sending trigger signal for 2 shots with 300.000 us distance
+[16:26:27.485] 10
+[16:26:27.486] Moving to: [-0.500 -3.300 3.900]
+[16:26:28.171] Arrived at: [-0.500 -3.300 3.900] WARNING!
+[16:26:28.171] Sending trigger signal for 3 shots with 300.000 us distance
+[16:26:29.236] 10
+[16:26:29.237] Moving to: [-0.500 -3.500 3.900]
+[16:26:29.920] Arrived at: [-0.500 -3.500 3.900]
+[16:26:29.921] Sending trigger signal for 3 shots with 300.000 us distance
+[16:26:31.002] 10
+[16:26:31.002] Moving to: [-0.500 -3.700 3.900]
+[16:26:31.690] Arrived at: [-0.500 -3.700 3.900]
+[16:26:31.690] Sending trigger signal for 3 shots with 300.000 us distance
+[16:26:32.752] 10
+[16:26:32.752] Moving to: [-0.500 -3.900 3.900]
+[16:26:33.427] Arrived at: [-0.500 -3.900 3.900]
+[16:26:33.428] Sending trigger signal for 3 shots with 300.000 us distance
+[16:26:34.494] 10
+[16:26:34.495] Moving to: [-0.500 -4.100 3.900]
+[16:26:35.178] Arrived at: [-0.500 -4.100 3.900]
+[16:26:35.179] Sending trigger signal for 3 shots with 300.000 us distance
+[16:26:36.237] 10
+[16:26:36.238] Moving to: [-0.500 -4.300 3.900]
+[16:26:36.909] Arrived at: [-0.500 -4.300 3.900]
+[16:26:36.910] Sending trigger signal for 3 shots with 300.000 us distance
+[16:26:37.977] 10
+[16:26:37.977] Moving to: [-0.500 -4.500 3.900]
+[16:26:38.648] Arrived at: [-0.500 -4.500 3.900]
+[16:26:38.649] Sending trigger signal for 3 shots with 300.000 us distance
+[16:26:39.705] 10
+[16:26:39.706] Moving to: [-0.500 -4.700 3.900]
+[16:26:40.381] Arrived at: [-0.500 -4.700 0.004] WARNING!
+[16:26:40.381] Sending trigger signal for 3 shots with 300.000 us distance
+[16:26:41.435] 10
+[16:26:41.435] Moving to: [-0.500 -4.900 3.900]
+[16:26:42.179] Arrived at: [-0.500 -4.900 3.900]
+[16:26:42.180] Sending trigger signal for 3 shots with 300.000 us distance
+[16:26:43.240] 10
+[16:26:43.240] Moving to: [-0.500 -5.100 3.900]
+[16:26:43.913] Arrived at: [-0.500 -5.100 3.900] WARNING!
+[16:26:43.913] Sending trigger signal for 3 shots with 300.000 us distance
+[16:26:44.971] 10
+[16:26:44.971] Moving to: [-0.500 -5.300 3.900]
+[16:26:45.655] Arrived at: [-0.500 -5.300 3.900]
+[16:26:45.656] Sending trigger signal for 3 shots with 300.000 us distance
+[16:26:46.710] 10
+[16:26:46.710] Moving to: [-0.500 -5.500 3.900]
+[16:26:47.390] Arrived at: [-0.500 -5.500 3.900]
+[16:26:47.391] Sending trigger signal for 4 shots with 300.000 us distance
+[16:26:48.441] 10
+[16:26:48.442] Moving to: [-0.500 -5.700 3.900]
+[16:26:49.115] Arrived at: [-0.500 -5.700 3.900]
+[16:26:49.116] Sending trigger signal for 3 shots with 300.000 us distance
+[16:26:50.169] 10
+[16:26:50.169] Moving to: [-0.500 -2.500 4.100]
+[16:26:53.327] Arrived at: [-0.500 -2.500 4.100]
+[16:26:53.327] Sending trigger signal for 2 shots with 300.000 us distance
+[16:26:54.385] 10
+[16:26:54.386] Moving to: [-0.500 -3.100 4.100]
+[16:26:55.437] Arrived at: [-0.500 -3.100 4.100]
+[16:26:55.437] Sending trigger signal for 3 shots with 300.000 us distance
+[16:26:56.500] 10
+[16:26:56.500] Moving to: [-0.500 -3.300 4.100]
+[16:26:57.175] Arrived at: [-0.500 -3.300 4.100] WARNING!
+[16:26:57.175] Sending trigger signal for 3 shots with 300.000 us distance
+[16:26:58.223] 10
+[16:26:58.223] Moving to: [-0.500 -3.500 4.100]
+[16:26:58.903] Arrived at: [-0.500 -3.500 4.100]
+[16:26:58.904] Sending trigger signal for 3 shots with 300.000 us distance
+[16:26:59.956] 10
+[16:26:59.957] Moving to: [-0.500 -3.700 4.100]
+[16:27:00.626] Arrived at: [-0.500 -3.700 4.100]
+[16:27:00.626] Sending trigger signal for 3 shots with 300.000 us distance
+[16:27:01.685] 10
+[16:27:01.685] Moving to: [-0.500 -3.900 4.100]
+[16:27:02.354] Arrived at: [-0.500 -3.900 4.100]
+[16:27:02.355] Sending trigger signal for 3 shots with 300.000 us distance
+[16:27:03.408] 10
+[16:27:03.408] Moving to: [-0.500 -4.100 4.100]
+[16:27:04.090] Arrived at: [-0.500 -4.100 4.100]
+[16:27:04.090] Sending trigger signal for 3 shots with 300.000 us distance
+[16:27:05.159] 10
+[16:27:05.159] Moving to: [-0.500 -4.300 4.100]
+[16:27:05.846] Arrived at: [-0.500 -4.300 4.100]
+[16:27:05.846] Sending trigger signal for 3 shots with 300.000 us distance
+[16:27:06.904] 10
+[16:27:06.905] Moving to: [-0.500 -4.500 4.100]
+[16:27:07.576] Arrived at: [-0.500 -4.500 4.100]
+[16:27:07.577] Sending trigger signal for 3 shots with 300.000 us distance
+[16:27:08.648] 10
+[16:27:08.649] Moving to: [-0.500 -4.700 4.100]
+[16:27:09.331] Arrived at: [-0.500 -4.700 4.100]
+[16:27:09.332] Sending trigger signal for 3 shots with 300.000 us distance
+[16:27:10.400] 10
+[16:27:10.400] Moving to: [-0.500 -4.900 4.100]
+[16:27:11.074] Arrived at: [-0.500 -4.900 4.100]
+[16:27:11.075] Sending trigger signal for 2 shots with 300.000 us distance
+[16:27:12.135] 10
+[16:27:12.135] Moving to: [-0.500 -5.100 4.100]
+[16:27:12.817] Arrived at: [-0.500 -5.100 4.100] WARNING!
+[16:27:12.817] Sending trigger signal for 2 shots with 300.000 us distance
+[16:27:13.881] 10
+[16:27:13.881] Moving to: [-0.500 -5.300 4.100]
+[16:27:14.539] Arrived at: [-0.500 -5.300 4.100]
+[16:27:14.540] Sending trigger signal for 2 shots with 300.000 us distance
+[16:27:15.592] 10
+[16:27:15.592] Moving to: [-0.500 -5.500 4.100]
+[16:27:16.259] Arrived at: [-0.500 -5.500 4.100]
+[16:27:16.259] Sending trigger signal for 2 shots with 300.000 us distance
+[16:27:17.323] 10
+[16:27:17.323] Moving to: [-0.500 -5.700 4.100]
+[16:27:17.971] Arrived at: [-0.500 -5.700 4.100]
+[16:27:17.972] Sending trigger signal for 2 shots with 300.000 us distance
+[16:27:19.041] 10
+[16:27:19.041] Moving to: [-0.500 -2.500 4.300]
+[16:27:22.177] Arrived at: [-0.500 -2.500 4.300]
+[16:27:22.178] Sending trigger signal for 2 shots with 300.000 us distance
+[16:27:23.235] 10
+[16:27:23.236] Moving to: [-0.500 -3.100 4.300]
+[16:27:24.285] Arrived at: [-0.500 -3.100 4.300]
+[16:27:24.286] Sending trigger signal for 3 shots with 300.000 us distance
+[16:27:25.370] 10
+[16:27:25.370] Moving to: [-0.500 -3.300 4.300]
+[16:27:26.054] Arrived at: [-0.500 -3.300 4.300] WARNING!
+[16:27:26.055] Sending trigger signal for 3 shots with 300.000 us distance
+[16:27:27.118] 10
+[16:27:27.118] Moving to: [-0.500 -3.900 4.300]
+[16:27:28.163] Arrived at: [-0.500 -3.900 4.300]
+[16:27:28.164] Sending trigger signal for 3 shots with 300.000 us distance
+[16:27:29.221] 10
+[16:27:29.221] Moving to: [-0.500 -4.100 4.300]
+[16:27:29.889] Arrived at: [-0.500 -4.100 4.300]
+[16:27:29.890] Sending trigger signal for 3 shots with 300.000 us distance
+[16:27:30.945] 10
+[16:27:30.945] Moving to: [-0.500 -4.300 4.300]
+[16:27:31.634] Arrived at: [-0.500 -4.300 4.300]
+[16:27:31.635] Sending trigger signal for 2 shots with 300.000 us distance
+[16:27:32.688] 10
+[16:27:32.688] Moving to: [-0.500 -2.500 4.500]
+[16:27:34.931] Arrived at: [-0.500 -2.500 4.500]
+[16:27:34.932] Sending trigger signal for 3 shots with 300.000 us distance
+[16:27:35.979] 10
+[16:27:35.981] Moving to: [-0.500 -3.100 4.500]
+[16:27:37.023] Arrived at: [-0.500 -3.100 4.500]
+[16:27:37.024] Sending trigger signal for 2 shots with 300.000 us distance
+[16:27:38.086] 10
+[16:27:38.086] Moving to: [-0.500 -3.300 4.500]
+[16:27:38.767] Arrived at: [-0.500 -3.300 4.500] WARNING!
+[16:27:38.768] Sending trigger signal for 2 shots with 300.000 us distance
+[16:27:39.831] 10
+[16:27:39.831] Moving to: [-0.500 -2.500 4.700]
+[16:27:41.496] Arrived at: [-0.500 -2.500 4.700]
+[16:27:41.496] Sending trigger signal for 2 shots with 300.000 us distance
+[16:27:42.550] 10
+[16:27:42.551] Moving to: [-0.500 -4.700 4.700]
+[16:27:44.688] Arrived at: [-0.500 -4.700 4.700]
+[16:27:44.689] Sending trigger signal for 2 shots with 300.000 us distance
+[16:27:45.748] 10
+[16:27:45.748] Moving to: [-0.500 -4.900 4.700]
+[16:27:46.424] Arrived at: [-0.500 -4.900 4.700]
+[16:27:46.424] Sending trigger signal for 2 shots with 300.000 us distance
+[16:27:47.494] 10
+[16:27:47.495] Moving to: [-0.500 -5.300 4.700]
+[16:27:48.365] Arrived at: [-0.500 -5.300 4.700]
+[16:27:48.365] Sending trigger signal for 2 shots with 300.000 us distance
+[16:27:49.419] 10
+[16:27:49.419] Moving to: [-0.500 -5.500 4.700]
+[16:27:50.099] Arrived at: [-0.500 -5.500 4.700]
+[16:27:50.100] Sending trigger signal for 2 shots with 300.000 us distance
+[16:27:51.156] 10
+[16:27:51.158] Moving to: [-0.500 -5.700 4.700]
+[16:27:53.005] Arrived at: [-0.500 -7.171 4.700] WARNING!
+[16:27:53.005] Sending trigger signal for 2 shots with 300.000 us distance
+[16:27:54.066] 10
+[16:27:54.067] Moving to: [-0.500 -2.500 4.900]
+[16:27:58.141] Arrived at: [-0.500 -2.500 4.900]
+[16:27:58.141] Sending trigger signal for 2 shots with 300.000 us distance
+[16:27:59.197] 10
+[16:27:59.198] Moving to: [-0.500 -3.900 4.900]
+[16:28:00.789] Arrived at: [-0.500 -3.900 4.900]
+[16:28:00.790] Sending trigger signal for 3 shots with 300.000 us distance
+[16:28:01.843] 10
+[16:28:01.843] Moving to: [-0.500 -4.100 4.900]
+[16:28:02.503] Arrived at: [-0.500 -4.100 4.900]
+[16:28:02.504] Sending trigger signal for 3 shots with 300.000 us distance
+[16:28:03.563] 10
+[16:28:03.564] Moving to: [-0.500 -4.300 4.900]
+[16:28:04.253] Arrived at: [-0.500 -4.300 4.900]
+[16:28:04.253] Sending trigger signal for 3 shots with 300.000 us distance
+[16:28:05.312] 10
+[16:28:05.312] Moving to: [-0.500 -4.500 4.900]
+[16:28:05.977] Arrived at: [-0.500 -4.500 4.900]
+[16:28:05.977] Sending trigger signal for 3 shots with 300.000 us distance
+[16:28:07.044] 10
+[16:28:07.045] Moving to: [-0.500 -4.700 4.900]
+[16:28:07.723] Arrived at: [-0.500 -4.700 4.900]
+[16:28:07.724] Sending trigger signal for 3 shots with 300.000 us distance
+[16:28:08.801] 10
+[16:28:08.802] Moving to: [-0.500 -4.900 4.900]
+[16:28:09.468] Arrived at: [-0.500 -4.900 4.900]
+[16:28:09.469] Sending trigger signal for 3 shots with 300.000 us distance
+[16:28:10.532] 10
+[16:28:10.532] Moving to: [-0.500 -5.100 4.900]
+[16:28:11.217] Arrived at: [-0.500 -5.100 4.900] WARNING!
+[16:28:11.217] Sending trigger signal for 3 shots with 300.000 us distance
+[16:28:12.284] 10
+[16:28:12.284] Moving to: [-0.500 -5.300 4.900]
+[16:28:12.972] Arrived at: [-0.500 -5.300 4.900]
+[16:28:12.973] Sending trigger signal for 3 shots with 300.000 us distance
+[16:28:14.025] 10
+[16:28:14.025] Moving to: [-0.500 -5.500 4.900]
+[16:28:14.706] Arrived at: [-0.500 -5.500 4.900]
+[16:28:14.706] Sending trigger signal for 4 shots with 300.000 us distance
+[16:28:15.774] 10
+[16:28:15.774] Moving to: [-0.500 -5.700 4.900]
+[16:28:16.461] Arrived at: [-0.500 -5.700 4.900]
+[16:28:16.462] Sending trigger signal for 3 shots with 300.000 us distance
+[16:28:17.512] 10
+[16:28:17.513] Moving to: [-0.500 -2.500 5.100]
+[16:28:20.687] Arrived at: [-0.500 -2.500 5.100] WARNING!
+[16:28:20.687] Sending trigger signal for 2 shots with 300.000 us distance
+[16:28:21.744] 10
+[16:28:21.744] Moving to: [-0.500 -3.900 5.100]
+[16:28:23.600] Arrived at: [-0.500 -3.900 5.100] WARNING!
+[16:28:23.600] Sending trigger signal for 3 shots with 300.000 us distance
+[16:28:24.681] 10
+[16:28:24.681] Moving to: [-0.500 -4.100 5.100]
+[16:28:25.618] Arrived at: [-0.500 -4.100 5.100] WARNING!
+[16:28:25.619] Sending trigger signal for 3 shots with 300.000 us distance
+[16:28:26.680] 10
+[16:28:26.681] Moving to: [-0.500 -4.300 5.100]
+[16:28:27.584] Arrived at: [-0.500 -4.300 5.100] WARNING!
+[16:28:27.584] Sending trigger signal for 3 shots with 300.000 us distance
+[16:28:28.663] 10
+[16:28:28.663] Moving to: [-0.500 -4.500 5.100]
+[16:28:29.581] Arrived at: [-0.500 -4.500 5.100] WARNING!
+[16:28:29.582] Sending trigger signal for 3 shots with 300.000 us distance
+[16:28:30.651] 10
+[16:28:30.652] Moving to: [-0.500 -4.700 5.100]
+[16:28:31.588] Arrived at: [-0.500 -4.700 5.100] WARNING!
+[16:28:31.588] Sending trigger signal for 3 shots with 300.000 us distance
+[16:28:32.641] 10
+[16:28:32.642] Moving to: [-0.500 -4.900 5.100]
+[16:28:33.633] Arrived at: [-0.500 -0.049 5.100] WARNING!
+[16:28:33.633] Sending trigger signal for 3 shots with 300.000 us distance
+[16:28:34.698] 10
+[16:28:34.699] Moving to: [-0.500 -5.100 5.100]
+[16:28:35.614] Arrived at: [-0.500 -5.100 5.100] WARNING!
+[16:28:35.615] Sending trigger signal for 3 shots with 300.000 us distance
+[16:28:36.681] 10
+[16:28:36.682] Moving to: [-0.500 -5.300 5.100]
+[16:28:37.606] Arrived at: [-0.500 -5.300 5.100] WARNING!
+[16:28:37.606] Sending trigger signal for 3 shots with 300.000 us distance
+[16:28:38.671] 10
+[16:28:38.672] Moving to: [-0.500 -5.500 5.100]
+[16:28:39.603] Arrived at: [-0.500 -5.500 5.100] WARNING!
+[16:28:39.603] Sending trigger signal for 3 shots with 300.000 us distance
+[16:28:40.667] 10
+[16:28:40.668] Moving to: [-0.500 -5.700 5.100]
+[16:28:41.588] Arrived at: [-0.500 -5.700 5.100] WARNING!
+[16:28:41.588] Sending trigger signal for 3 shots with 300.000 us distance
+[16:28:42.656] 10
+[16:28:42.657] Moving to: [-0.500 -2.300 5.300]
+[16:28:46.014] Arrived at: [-0.500 -2.300 5.300] WARNING!
+[16:28:46.014] Sending trigger signal for 2 shots with 300.000 us distance
+[16:28:47.091] 10
+[16:28:47.091] Moving to: [-0.500 -2.500 5.300]
+[16:28:47.774] Arrived at: [-0.500 -2.500 5.300]
+[16:28:47.774] Sending trigger signal for 3 shots with 300.000 us distance
+[16:28:48.831] 10
+[16:28:48.832] Moving to: [-0.500 -4.100 5.300]
+[16:28:50.432] Arrived at: [-0.500 -4.100 5.300]
+[16:28:50.432] Sending trigger signal for 3 shots with 300.000 us distance
+[16:28:51.487] 10
+[16:28:51.488] Moving to: [-0.500 -4.300 5.300]
+[16:28:52.166] Arrived at: [-0.500 -4.300 5.300]
+[16:28:52.167] Sending trigger signal for 3 shots with 300.000 us distance
+[16:28:53.228] 10
+[16:28:53.228] Moving to: [-0.500 -4.500 5.300]
+[16:28:53.908] Arrived at: [-0.500 -4.500 5.300]
+[16:28:53.909] Sending trigger signal for 2 shots with 300.000 us distance
+[16:28:54.967] 10
+[16:28:54.968] Moving to: [-0.500 -2.500 5.500]
+[16:28:57.394] Arrived at: [-0.500 -2.500 5.500]
+[16:28:57.395] Sending trigger signal for 3 shots with 300.000 us distance
+[16:28:58.445] 10
+[16:28:58.446] Moving to: [-0.500 -3.900 5.500]
+[16:29:00.041] Arrived at: [-0.500 -3.900 5.500]
+[16:29:00.041] Sending trigger signal for 2 shots with 300.000 us distance
+[16:29:01.108] 10
+[16:29:01.108] Moving to: [-0.500 -4.100 5.500]
+[16:29:01.783] Arrived at: [-0.500 -4.100 5.500]
+[16:29:01.784] Sending trigger signal for 3 shots with 300.000 us distance
+[16:29:02.845] 10
+[16:29:02.846] Moving to: [-0.500 -4.300 5.500]
+[16:29:03.525] Arrived at: [-0.500 -4.300 5.500]
+[16:29:03.526] Sending trigger signal for 3 shots with 300.000 us distance
+[16:29:04.606] 10
+[16:29:04.606] Moving to: [-0.500 -2.500 5.700]
+[16:29:06.828] Arrived at: [-0.500 -2.500 5.700]
+[16:29:06.829] Sending trigger signal for 2 shots with 300.000 us distance
+[16:29:07.899] 10
+[16:29:07.899] Moving to: [-0.500 -3.900 5.700]
+[16:29:09.499] Arrived at: [-0.500 -3.900 5.700]
+[16:29:09.500] Sending trigger signal for 3 shots with 300.000 us distance
+[16:29:10.557] 10
+[16:29:10.558] Moving to: [-0.500 -4.100 5.700]
+[16:29:11.231] Arrived at: [-0.500 -4.100 5.700]
+[16:29:11.232] Sending trigger signal for 3 shots with 300.000 us distance
+[16:29:12.296] 10
+[16:29:12.297] Moving to: [-0.500 -4.300 5.700]
+[16:29:12.981] Arrived at: [-0.500 -4.300 5.700]
+[16:29:12.982] Sending trigger signal for 3 shots with 300.000 us distance
+[16:29:14.040] 10
+[16:29:14.040] Moving to: [-0.500 -4.500 5.700]
+[16:29:14.715] Arrived at: [-0.500 -4.500 5.700]
+[16:29:14.716] Sending trigger signal for 2 shots with 300.000 us distance
+[16:29:15.762] 10
+[16:29:15.762] Moving to: [-0.500 -5.100 5.700]
+[16:29:16.873] Arrived at: [-0.500 -5.100 5.700] WARNING!
+[16:29:16.873] Sending trigger signal for 2 shots with 300.000 us distance
+[16:29:17.945] 10
+[16:29:17.945] Moving to: [-0.500 -5.300 5.700]
+[16:29:18.614] Arrived at: [-0.500 -5.300 5.700]
+[16:29:18.615] Sending trigger signal for 2 shots with 300.000 us distance
+[16:29:19.668] 10
+[16:29:19.669] Moving to: [-0.500 -2.300 5.900]
+[16:29:22.630] Arrived at: [-0.500 -2.300 5.900] WARNING!
+[16:29:22.631] Sending trigger signal for 2 shots with 300.000 us distance
+[16:29:23.697] 10
+[16:29:23.698] Moving to: [-0.500 -2.500 5.900]
+[16:29:24.372] Arrived at: [-0.500 -2.500 5.900]
+[16:29:24.373] Sending trigger signal for 3 shots with 300.000 us distance
+[16:29:25.427] 10
+[16:29:25.427] Moving to: [-0.500 -3.900 5.900]
+[16:29:27.037] Arrived at: [-0.500 -3.900 5.900]
+[16:29:27.038] Sending trigger signal for 3 shots with 300.000 us distance
+[16:29:28.105] 10
+[16:29:28.105] Moving to: [-0.500 -4.100 5.900]
+[16:29:28.779] Arrived at: [-0.500 -4.100 5.900]
+[16:29:28.780] Sending trigger signal for 3 shots with 300.000 us distance
+[16:29:29.842] 10
+[16:29:29.843] Moving to: [-0.500 -4.300 5.900]
+[16:29:30.518] Arrived at: [-0.500 -4.300 5.900]
+[16:29:30.519] Sending trigger signal for 3 shots with 300.000 us distance
+[16:29:31.587] 10
+[16:29:31.587] Moving to: [-0.500 -4.500 5.900]
+[16:29:32.269] Arrived at: [-0.500 -4.500 5.900]
+[16:29:32.270] Sending trigger signal for 3 shots with 300.000 us distance
+[16:29:33.326] 10
+[16:29:33.326] Moving to: [-0.500 -4.700 5.900]
+[16:29:33.978] Arrived at: [-0.500 -4.700 5.900]
+[16:29:33.978] Sending trigger signal for 3 shots with 300.000 us distance
+[16:29:35.037] 10
+[16:29:35.038] Moving to: [-0.500 -4.900 5.900]
+[16:29:35.712] Arrived at: [-0.500 -4.900 5.900]
+[16:29:35.713] Sending trigger signal for 3 shots with 300.000 us distance
+[16:29:36.761] 10
+[16:29:36.761] Moving to: [-0.500 -5.100 5.900]
+[16:29:37.435] Arrived at: [-0.500 -5.100 5.900] WARNING!
+[16:29:37.436] Sending trigger signal for 3 shots with 300.000 us distance
+[16:29:38.490] 10
+[16:29:38.490] Moving to: [-0.500 -5.300 5.900]
+[16:29:39.158] Arrived at: [-0.500 -5.300 5.900]
+[16:29:39.159] Sending trigger signal for 3 shots with 300.000 us distance
+[16:29:40.224] 10
+[16:29:40.224] Moving to: [-0.500 -5.500 5.900]
+[16:29:40.909] Arrived at: [-0.500 -5.500 5.900]
+[16:29:40.910] Sending trigger signal for 3 shots with 300.000 us distance
+[16:29:41.964] 10
+[16:29:41.965] Moving to: [-0.500 -5.700 5.900]
+[16:29:42.642] Arrived at: [-0.500 -5.700 5.900]
+[16:29:42.643] Sending trigger signal for 3 shots with 300.000 us distance
+[16:29:43.702] 10
+[16:29:43.703] Moving to: [-0.500 -2.300 6.100]
+[16:29:47.038] Arrived at: [-0.500 -2.300 6.100] WARNING!
+[16:29:47.039] Sending trigger signal for 2 shots with 300.000 us distance
+[16:29:48.101] 10
+[16:29:48.102] Moving to: [-0.500 -2.500 6.100]
+[16:29:49.037] Arrived at: [-0.500 -2.500 6.100] WARNING!
+[16:29:49.037] Sending trigger signal for 2 shots with 300.000 us distance
+[16:29:50.099] 10
+[16:29:50.100] Moving to: [-0.500 -3.900 6.100]
+[16:29:51.952] Arrived at: [-0.500 -3.900 6.100] WARNING!
+[16:29:51.952] Sending trigger signal for 3 shots with 300.000 us distance
+[16:29:53.017] 10
+[16:29:53.018] Moving to: [-0.500 -4.100 6.100]
+[16:29:53.958] Arrived at: [-0.500 -4.100 6.100] WARNING!
+[16:29:53.959] Sending trigger signal for 3 shots with 300.000 us distance
+[16:29:55.010] 10
+[16:29:55.011] Moving to: [-0.500 -4.300 6.100]
+[16:29:55.938] Arrived at: [-0.500 -4.300 6.100] WARNING!
+[16:29:55.938] Sending trigger signal for 3 shots with 300.000 us distance
+[16:29:56.991] 10
+[16:29:56.992] Moving to: [-0.500 -4.500 6.100]
+[16:29:57.958] Arrived at: [-0.500 -4.500 6.100] WARNING!
+[16:29:57.958] Sending trigger signal for 3 shots with 300.000 us distance
+[16:29:59.013] 10
+[16:29:59.014] Moving to: [-0.500 -4.700 6.100]
+[16:29:59.940] Arrived at: [-0.500 -4.700 6.100] WARNING!
+[16:29:59.940] Sending trigger signal for 3 shots with 300.000 us distance
+[16:30:00.986] 10
+[16:30:00.987] Moving to: [-0.500 -4.900 6.100]
+[16:30:01.907] Arrived at: [-0.500 -4.900 6.100] WARNING!
+[16:30:01.907] Sending trigger signal for 3 shots with 300.000 us distance
+[16:30:02.969] 10
+[16:30:02.969] Moving to: [-0.500 -5.100 6.100]
+[16:30:03.873] Arrived at: [-0.500 -5.100 6.100] WARNING!
+[16:30:03.875] Sending trigger signal for 3 shots with 300.000 us distance
+[16:30:04.930] 10
+[16:30:04.930] Moving to: [-0.500 -5.300 6.100]
+[16:30:05.856] Arrived at: [-0.500 -5.300 6.100] WARNING!
+[16:30:05.856] Sending trigger signal for 3 shots with 300.000 us distance
+[16:30:06.907] 10
+[16:30:06.907] Moving to: [-0.500 -5.500 6.100]
+[16:30:07.835] Arrived at: [-0.500 -5.500 6.100] WARNING!
+[16:30:07.835] Sending trigger signal for 3 shots with 300.000 us distance
+[16:30:08.895] 10
+[16:30:08.896] Moving to: [-0.500 -5.700 6.100]
+[16:30:09.815] Arrived at: [-0.500 -5.700 6.100] WARNING!
+[16:30:09.816] Sending trigger signal for 3 shots with 300.000 us distance
+[16:30:10.896] 10
+[16:30:10.897] Moving to: [-0.500 -2.300 6.300]
+[16:30:14.226] Arrived at: [-0.500 -2.300 6.300] WARNING!
+[16:30:14.226] Sending trigger signal for 2 shots with 300.000 us distance
+[16:30:15.296] 10
+[16:30:15.297] Moving to: [-0.500 -2.500 6.300]
+[16:30:15.978] Arrived at: [-0.500 -2.500 6.300]
+[16:30:15.978] Sending trigger signal for 2 shots with 300.000 us distance
+[16:30:17.032] 10
+[16:30:17.032] Moving to: [-0.500 -2.500 6.500]
+[16:30:17.696] Arrived at: [-0.500 -2.500 6.500]
+[16:30:17.697] Sending trigger signal for 3 shots with 300.000 us distance
+[16:30:18.765] 10
+[16:30:18.765] Moving to: [-0.500 -2.500 6.700]
+[16:30:19.448] Arrived at: [-0.500 -2.500 6.700]
+[16:30:19.448] Sending trigger signal for 2 shots with 300.000 us distance
+[16:30:20.508] 10
+[16:30:20.509] Moving to: [-0.500 -2.700 7.100]
+[16:30:21.797] Arrived at: [-0.500 -2.700 7.100] WARNING!
+[16:30:21.798] Sending trigger signal for 2 shots with 300.000 us distance
+[16:30:22.847] 10
+[16:30:22.848] Moving to: [-0.500 -2.700 7.300]
+[16:30:23.515] Arrived at: [-0.500 -2.700 7.300]
+[16:30:23.516] Sending trigger signal for 2 shots with 300.000 us distance
+[16:30:24.576] 10
+[16:30:24.576] Moving to: [-0.500 -2.900 7.500]
+[16:30:25.693] Arrived at: [-0.500 -2.900 7.500]
+[16:30:25.693] Sending trigger signal for 2 shots with 300.000 us distance
+[16:30:26.754] 10
+[16:30:26.754] Moving to: [-0.500 -2.900 7.700]
+[16:30:27.430] Arrived at: [-0.500 -2.900 7.700]
+[16:30:27.430] Sending trigger signal for 2 shots with 300.000 us distance
+[16:30:28.491] 10
+[16:30:28.491] Moving to: [-0.500 -6.500 7.700]
+[16:30:31.595] Arrived at: [-0.500 -6.500 7.700]
+[16:30:31.596] Sending trigger signal for 3 shots with 300.000 us distance
+[16:30:32.663] 10
+[16:30:32.664] Moving to: [-0.500 -3.100 7.900]
+[16:30:36.020] Arrived at: [-0.500 -3.100 7.900]
+[16:30:36.021] Sending trigger signal for 2 shots with 300.000 us distance
+[16:30:37.083] 10
+[16:30:37.084] Moving to: [-0.500 -4.500 7.900]
+[16:30:38.681] Arrived at: [-0.500 -4.500 7.900]
+[16:30:38.682] Sending trigger signal for 4 shots with 300.000 us distance
+[16:30:39.740] 10
+[16:30:39.740] Moving to: [-0.500 -4.700 7.900]
+[16:30:40.416] Arrived at: [-0.500 -4.700 7.900]
+[16:30:40.417] Sending trigger signal for 11 shots with 300.000 us distance
+[16:30:41.579] 10
+[16:30:41.580] Moving to: [-0.500 -4.900 7.900]
+[16:30:42.262] Arrived at: [-0.500 -4.900 7.900]
+[16:30:42.262] Sending trigger signal for 15 shots with 300.000 us distance
+[16:30:43.411] 10
+[16:30:43.411] Moving to: [-0.500 -5.100 7.900]
+[16:30:46.090] Arrived at: [-0.500 -5.100 10.108] WARNING!
+[16:30:46.090] Sending trigger signal for 16 shots with 300.000 us distance
+[16:30:47.245] 10
+[16:30:47.245] Moving to: [-0.500 -5.300 7.900]
+[16:30:49.833] Arrived at: [-0.500 -5.300 7.900]
+[16:30:49.833] Sending trigger signal for 15 shots with 300.000 us distance
+[16:30:50.992] 10
+[16:30:50.992] Moving to: [-0.500 -5.500 7.900]
+[16:30:51.661] Arrived at: [-0.500 -5.500 7.900]
+[16:30:51.661] Sending trigger signal for 9 shots with 300.000 us distance
+[16:30:52.719] 10
+[16:30:52.719] Moving to: [-0.500 -5.700 7.900]
+[16:30:53.382] Arrived at: [-0.500 -5.700 7.900]
+[16:30:53.383] Sending trigger signal for 2 shots with 300.000 us distance
+[16:30:54.447] 10
+[16:30:54.447] Moving to: [-0.500 -6.100 7.900]
+[16:30:55.312] Arrived at: [-0.500 -6.100 7.900] WARNING!
+[16:30:55.313] Sending trigger signal for 2 shots with 300.000 us distance
+[16:30:56.379] 10
+[16:30:56.379] Moving to: [-0.500 -6.300 7.900]
+[16:30:57.065] Arrived at: [-0.500 -6.300 7.900]
+[16:30:57.066] Sending trigger signal for 3 shots with 300.000 us distance
+[16:30:58.126] 10
+[16:30:58.127] Moving to: [-0.500 -3.100 8.100]
+[16:31:01.281] Arrived at: [-0.500 -3.100 8.100]
+[16:31:01.281] Sending trigger signal for 2 shots with 300.000 us distance
+[16:31:02.332] 10
+[16:31:02.332] Moving to: [-0.500 -3.300 8.100]
+[16:31:03.004] Arrived at: [-0.500 -3.300 8.100] WARNING!
+[16:31:03.004] Sending trigger signal for 2 shots with 300.000 us distance
+[16:31:04.056] 10
+[16:31:04.057] Moving to: [-0.500 -4.300 8.100]
+[16:31:05.290] Arrived at: [-0.500 -4.300 8.100]
+[16:31:05.291] Sending trigger signal for 6 shots with 300.000 us distance
+[16:31:06.366] 10
+[16:31:06.366] Moving to: [-0.500 -4.500 8.100]
+[16:31:07.034] Arrived at: [-0.500 -4.500 8.100]
+[16:31:07.035] Sending trigger signal for 20 shots with 300.000 us distance
+[16:31:08.199] 10
+[16:31:08.199] Moving to: [-0.500 -4.700 8.100]
+[16:31:08.881] Arrived at: [-0.500 -4.700 8.100]
+[16:31:08.882] Sending trigger signal for 21 shots with 300.000 us distance
+[16:31:10.049] 10
+[16:31:10.049] Moving to: [-0.500 -4.900 8.100]
+[16:31:10.731] Arrived at: [-0.500 -4.900 8.100]
+[16:31:10.732] Sending trigger signal for 20 shots with 300.000 us distance
+[16:31:11.892] 10
+[16:31:11.892] Moving to: [-0.500 -5.100 8.100]
+[16:31:12.568] Arrived at: [-0.500 -5.100 8.100] WARNING!
+[16:31:12.569] Sending trigger signal for 19 shots with 300.000 us distance
+[16:31:13.731] 10
+[16:31:13.731] Moving to: [-0.500 -5.300 8.100]
+[16:31:14.412] Arrived at: [-0.500 -5.300 8.100]
+[16:31:14.412] Sending trigger signal for 19 shots with 300.000 us distance
+[16:31:15.575] 10
+[16:31:15.575] Moving to: [-0.500 -5.500 8.100]
+[16:31:16.259] Arrived at: [-0.500 -5.500 8.100]
+[16:31:16.259] Sending trigger signal for 20 shots with 300.000 us distance
+[16:31:17.413] 10
+[16:31:17.413] Moving to: [-0.500 -5.700 8.100]
+[16:31:18.105] Arrived at: [-0.500 -5.700 8.100]
+[16:31:18.105] Sending trigger signal for 16 shots with 300.000 us distance
+[16:31:19.270] 10
+[16:31:19.271] Moving to: [-0.500 -5.900 8.100]
+[16:31:19.956] Arrived at: [-0.500 -5.900 8.100]
+[16:31:19.957] Sending trigger signal for 4 shots with 300.000 us distance
+[16:31:21.008] 10
+[16:31:21.009] Moving to: [-0.500 -6.100 8.100]
+[16:31:21.688] Arrived at: [-0.500 -6.100 8.100] WARNING!
+[16:31:21.688] Sending trigger signal for 2 shots with 300.000 us distance
+[16:31:22.757] 10
+[16:31:22.757] Moving to: [-0.500 -3.500 8.300]
+[16:31:25.556] Arrived at: [-0.500 -3.500 8.300]
+[16:31:25.556] Sending trigger signal for 2 shots with 300.000 us distance
+[16:31:26.615] 10
+[16:31:26.616] Moving to: [-0.500 -4.300 8.300]
+[16:31:27.854] Arrived at: [-0.500 -4.300 8.300]
+[16:31:27.854] Sending trigger signal for 15 shots with 300.000 us distance
+[16:31:29.006] 10
+[16:31:29.006] Moving to: [-0.500 -4.500 8.300]
+[16:31:29.683] Arrived at: [-0.500 -4.500 8.300]
+[16:31:29.684] Sending trigger signal for 23 shots with 300.000 us distance
+[16:31:30.843] 10
+[16:31:30.843] Moving to: [-0.500 -4.700 8.300]
+[16:31:31.532] Arrived at: [-0.500 -4.700 8.300]
+[16:31:31.533] Sending trigger signal for 22 shots with 300.000 us distance
+[16:31:32.703] 10
+[16:31:32.704] Moving to: [-0.500 -4.900 8.300]
+[16:31:33.386] Arrived at: [-0.500 -4.900 8.300]
+[16:31:33.387] Sending trigger signal for 20 shots with 300.000 us distance
+[16:31:34.555] 10
+[16:31:34.555] Moving to: [-0.500 -5.100 8.300]
+[16:31:35.240] Arrived at: [-0.500 -5.100 8.300] WARNING!
+[16:31:35.240] Sending trigger signal for 19 shots with 300.000 us distance
+[16:31:36.396] 10
+[16:31:36.397] Moving to: [-0.500 -5.300 8.300]
+[16:31:37.089] Arrived at: [-0.500 -5.300 8.300]
+[16:31:37.090] Sending trigger signal for 19 shots with 300.000 us distance
+[16:31:38.247] 10
+[16:31:38.248] Moving to: [-0.500 -5.500 8.300]
+[16:31:38.923] Arrived at: [-0.500 -5.500 8.300]
+[16:31:38.923] Sending trigger signal for 19 shots with 300.000 us distance
+[16:31:40.088] 10
+[16:31:40.089] Moving to: [-0.500 -5.700 8.300]
+[16:31:40.773] Arrived at: [-0.500 -5.700 8.300]
+[16:31:40.773] Sending trigger signal for 20 shots with 300.000 us distance
+[16:31:41.923] 10
+[16:31:41.923] Moving to: [-0.500 -5.900 8.300]
+[16:31:42.585] Arrived at: [-0.500 -5.900 8.300]
+[16:31:42.586] Sending trigger signal for 7 shots with 300.000 us distance
+[16:31:43.656] 10
+[16:31:43.656] Moving to: [-0.500 -4.300 8.500]
+[16:31:45.691] Arrived at: [-0.500 -4.300 8.500]
+[16:31:45.692] Sending trigger signal for 11 shots with 300.000 us distance
+[16:31:46.851] 10
+[16:31:46.852] Moving to: [-0.500 -4.500 8.500]
+[16:31:47.530] Arrived at: [-0.500 -4.500 8.500]
+[16:31:47.530] Sending trigger signal for 22 shots with 300.000 us distance
+[16:31:48.696] 10
+[16:31:48.697] Moving to: [-0.500 -4.700 8.500]
+[16:31:49.376] Arrived at: [-0.500 -4.700 8.500]
+[16:31:49.376] Sending trigger signal for 21 shots with 300.000 us distance
+[16:31:50.537] 10
+[16:31:50.538] Moving to: [-0.500 -4.900 8.500]
+[16:31:51.221] Arrived at: [-0.500 -4.900 8.500]
+[16:31:51.221] Sending trigger signal for 20 shots with 300.000 us distance
+[16:31:52.377] 10
+[16:31:52.377] Moving to: [-0.500 -5.100 8.500]
+[16:31:53.046] Arrived at: [-0.500 -5.100 8.500] WARNING!
+[16:31:53.046] Sending trigger signal for 19 shots with 300.000 us distance
+[16:31:54.212] 10
+[16:31:54.213] Moving to: [-0.500 -5.300 8.500]
+[16:31:54.897] Arrived at: [-0.500 -5.300 8.500]
+[16:31:54.898] Sending trigger signal for 19 shots with 300.000 us distance
+[16:31:56.058] 10
+[16:31:56.058] Moving to: [-0.500 -5.500 8.500]
+[16:31:56.743] Arrived at: [-0.500 -5.500 8.500]
+[16:31:56.743] Sending trigger signal for 19 shots with 300.000 us distance
+[16:31:57.905] 10
+[16:31:57.906] Moving to: [-0.500 -5.700 8.500]
+[16:31:58.590] Arrived at: [-0.500 -5.700 8.500]
+[16:31:58.590] Sending trigger signal for 19 shots with 300.000 us distance
+[16:31:59.749] 10
+[16:31:59.750] Moving to: [-0.500 -5.900 8.500]
+[16:32:00.421] Arrived at: [-0.500 -5.900 8.500]
+[16:32:00.422] Sending trigger signal for 4 shots with 300.000 us distance
+[16:32:01.486] 10
+[16:32:01.487] Moving to: [-0.500 -3.500 8.700]
+[16:32:04.080] Arrived at: [-0.500 -3.500 8.700] WARNING!
+[16:32:04.081] Sending trigger signal for 2 shots with 300.000 us distance
+[16:32:05.141] 10
+[16:32:05.142] Moving to: [-0.500 -3.900 8.700]
+[16:32:06.258] Arrived at: [-0.500 -3.900 8.700] WARNING!
+[16:32:06.259] Sending trigger signal for 2 shots with 300.000 us distance
+[16:32:07.323] 10
+[16:32:07.323] Moving to: [-0.500 -4.300 8.700]
+[16:32:08.437] Arrived at: [-0.500 -4.300 8.700] WARNING!
+[16:32:08.437] Sending trigger signal for 2 shots with 300.000 us distance
+[16:32:09.502] 10
+[16:32:09.503] Moving to: [-0.500 -4.500 8.700]
+[16:32:10.441] Arrived at: [-0.500 -4.500 8.700] WARNING!
+[16:32:10.442] Sending trigger signal for 11 shots with 300.000 us distance
+[16:32:11.602] 10
+[16:32:11.603] Moving to: [-0.500 -4.700 8.700]
+[16:32:12.540] Arrived at: [-0.500 -4.700 8.700] WARNING!
+[16:32:12.540] Sending trigger signal for 18 shots with 300.000 us distance
+[16:32:13.704] 10
+[16:32:13.705] Moving to: [-0.500 -4.900 8.700]
+[16:32:14.630] Arrived at: [-0.500 -4.900 0.009] WARNING!
+[16:32:14.630] Sending trigger signal for 19 shots with 300.000 us distance
+[16:32:15.793] 10
+[16:32:15.794] Moving to: [-0.500 -5.100 8.700]
+[16:32:16.771] Arrived at: [-0.500 -5.100 8.700] WARNING!
+[16:32:16.772] Sending trigger signal for 19 shots with 300.000 us distance
+[16:32:17.935] 10
+[16:32:17.936] Moving to: [-0.500 -5.300 8.700]
+[16:32:18.856] Arrived at: [-0.500 -5.300 8.700] WARNING!
+[16:32:18.856] Sending trigger signal for 19 shots with 300.000 us distance
+[16:32:20.018] 10
+[16:32:20.019] Moving to: [-0.500 -5.500 8.700]
+[16:32:20.955] Arrived at: [-0.500 -5.500 8.700] WARNING!
+[16:32:20.955] Sending trigger signal for 16 shots with 300.000 us distance
+[16:32:22.117] 10
+[16:32:22.118] Moving to: [-0.500 -5.700 8.700]
+[16:32:23.043] Arrived at: [-0.500 -5.700 8.700] WARNING!
+[16:32:23.043] Sending trigger signal for 6 shots with 300.000 us distance
+[16:32:24.096] 10
+[16:32:24.099] Moving to: [-0.500 -4.700 8.900]
+[16:32:25.769] Arrived at: [-0.500 -4.700 8.900]
+[16:32:25.769] Sending trigger signal for 2 shots with 300.000 us distance
+[16:32:26.826] 10
+[16:32:26.827] Moving to: [-0.500 -4.900 8.900]
+[16:32:27.509] Arrived at: [-0.500 -4.900 8.900]
+[16:32:27.510] Sending trigger signal for 5 shots with 300.000 us distance
+[16:32:28.580] 10
+[16:32:28.580] Moving to: [-0.500 -5.100 8.900]
+[16:32:29.266] Arrived at: [-0.500 -5.100 8.900] WARNING!
+[16:32:29.266] Sending trigger signal for 7 shots with 300.000 us distance
+[16:32:30.336] 10
+[16:32:30.336] Moving to: [-0.500 -5.300 8.900]
+[16:32:31.016] Arrived at: [-0.500 -5.300 8.900]
+[16:32:31.017] Sending trigger signal for 4 shots with 300.000 us distance
+[16:32:32.083] 10
+[16:32:32.084] Plan irradiation finished.

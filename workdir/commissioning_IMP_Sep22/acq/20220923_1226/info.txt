@@ -1,0 +1,6 @@
+# pulses =
+
+Width (us) =2
+Width Off (us) =d
+Width_Off (read from Arduino) (us) =100
+

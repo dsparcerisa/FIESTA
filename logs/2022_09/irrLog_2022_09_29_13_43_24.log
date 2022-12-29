@@ -1,0 +1,48 @@
+[13:43:24.641] Starting plan irradiation...
+	Plan name: Plan de commissioning para TRIG
+	Plan comment: prueba
+	Plan type: TRIG
+	Arduino high time in us: 
+
+	Air depth at stage position Z=0: 4.50 cm
+	Absolut shift from X to (0,0) well: [0.000 0.000 0.000]
+	Current intensity: 0.000 nA (planned for 48.000 nA)
+
+[13:43:28.263] Moving to: [-3.500 -0.500 0.000]
+[13:43:34.235] Moving to: [-3.500 -0.500 0.000]
+[13:43:34.484] Arrived at: [-3.500 -0.500 0.000]
+[13:43:34.484] Sending trigger signal for 1 shots with 300.000 us distance
+[13:43:35.556] Pulsedfinished
+[13:43:35.557] Moving to: [-3.500 -2.500 0.000]
+[13:43:37.540] Arrived at: [-3.500 -2.500 0.000]
+[13:43:37.540] Sending trigger signal for 100 shots with 300.000 us distance
+[13:43:38.805] Pulsedfinish
+[13:43:38.806] Moving to: [-3.500 -4.500 0.000]
+[13:43:40.778] Arrived at: [-3.500 -4.500 0.000]
+[13:43:40.780] Sending trigger signal for 200 shots with 300.000 us distance
+[13:43:42.075] 10
+[13:43:42.077] Moving to: [-3.500 -0.500 2.000]
+[13:43:47.103] Arrived at: [-3.500 -0.500 2.000]
+[13:43:47.104] Sending trigger signal for 300 shots with 300.000 us distance
+[13:43:48.432] 10
+[13:43:48.433] Moving to: [-3.500 -2.500 2.000]
+[13:43:50.418] Arrived at: [-3.500 -2.500 2.000]
+[13:43:50.419] Sending trigger signal for 400 shots with 300.000 us distance
+[13:43:51.784] 10
+[13:43:51.786] Moving to: [-3.500 -4.500 2.000]
+[13:43:53.739] Arrived at: [-3.500 -4.500 2.000]
+[13:43:53.739] Sending trigger signal for 100 shots with 300.000 us distance
+[13:43:55.004] 10
+[13:43:55.005] Moving to: [-3.500 -0.500 4.000]
+[13:44:00.029] Arrived at: [-3.500 -0.500 4.000]
+[13:44:00.029] Sending trigger signal for 200 shots with 300.000 us distance
+[13:44:01.356] 10
+[13:44:01.357] Moving to: [-3.500 -2.500 4.000]
+[13:44:03.357] Arrived at: [-3.500 -2.500 4.000]
+[13:44:03.357] Sending trigger signal for 300 shots with 300.000 us distance
+[13:44:04.715] 10
+[13:44:04.716] Moving to: [-3.500 -4.500 4.000]
+[13:44:06.707] Arrived at: [-3.500 -4.500 4.000]
+[13:44:06.708] Sending trigger signal for 400 shots with 300.000 us distance
+[13:44:08.088] 10
+[13:44:08.090] Plan irradiation finished.
