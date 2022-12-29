@@ -1,4 +1,4 @@
-function [dose, varMat, realDR, realDG, realDB] = getDoseMicke(I, CoefR, CoefG, CoefB, pixelsXCM, deltas, pxmax)
+function [dose, varMat, realDR, realDG, realDB] = getDoseMicke_simple(I, CoefR, CoefG, CoefB, deltas, pxmax)
 
 %% Definir funciones
 DR = @(pv) CoefR(3) + CoefR(2)./(pv - CoefR(1));
@@ -62,16 +62,9 @@ doseRGB = (isR.*realDR+realDG+isB.*realDB)./ (1 + isR + isB);
 %figure(1); imagesc(doseRGB); title('Dose map (RGB)'); caxis([0 10]);
 %figure(2); imagesc(delta0); title('Delta0'); caxis([0.8 1.2]);
 
-dxy = 1/pixelsXCM;
-NX = size(doseRGB, 1);
-NY = size(doseRGB, 2);
-sizeX = dxy*(NX);
-sizeY = dxy*(NY);
-dose = createEmptyCG2D(dxy, sizeX, sizeY);
-dose.data = doseRGB;
-
-varMat = createEmptyCG2D(dxy, sizeX, sizeY);
-varMat.data = delta0;
+% Create simple outputs
+dose = doseRGB;
+varMat = delta0;
 
 end
 

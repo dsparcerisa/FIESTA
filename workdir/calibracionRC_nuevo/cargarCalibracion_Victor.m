@@ -152,19 +152,67 @@ for i=1:filmsPerSample
     %saveFileName = ['CoefFitHF_' filmOrder{i} '.mat'];  
     saveFileName = ['CoefFitMedicina_' filmOrder{i} '.mat']; 
 
-    save(saveFileName, 'CoefR1', 'CoefG1', 'CoefB1');
+    save(saveFileName, 'CoefR1', 'CoefG1', 'CoefB1', 'dCoefR1', 'dCoefG1', 'dCoefB1');
 end
 
-        autoDoses(i,j) = doseB(meanValues(i,j,3) / maxBits);
-        %autoDoseErrors(i,j,k) = std2(dose.data);
-        plot(dosesGy, autoDoses(i, :), 'b.'); hold on
+%% Test de autoconsistencia
+autoDose = nan(filmsPerSample, Nsamples, 3);
+err_autoDose = nan(filmsPerSample, Nsamples, 3);
+
+for i=1:filmsPerSample
+    %loadFileName = ['CoefFitMedicina_' filmOrder{i} '.mat'];
+    loadFileName = ['fitCoef_HF_' filmOrder{i} '.mat'];
+    
+    load(loadFileName);
+    
+    for j=1:Nsamples
+        [autoDose(i,j,1), err_autoDose(i,j,1)] = getChannelDoseT1_wErrors(CoefR1, finalPixelValues(i,j,1), ...
+            dCoefR1, 0*finalPixelErrValues(i,j,1));
+        [autoDose(i,j,2), err_autoDose(i,j,2)] = getChannelDoseT1_wErrors(CoefG1, finalPixelValues(i,j,2), ...
+            dCoefG1, 0*finalPixelErrValues(i,j,2));
+        [autoDose(i,j,3), err_autoDose(i,j,3)] = getChannelDoseT1_wErrors(CoefB1, finalPixelValues(i,j,3), ...
+            dCoefB1, 0*finalPixelErrValues(i,j,3));
         
-        grid on
     end
+    subplot(1,2,i);
+    plot(dosesGy, dosesGy, 'k-');
+    hold on
+    errorbar(dosesGy, autoDose(i,:,1), err_autoDose(i,:,1), 'r.');
+    errorbar(dosesGy, autoDose(i,:,2), err_autoDose(i,:,2), 'g.');
+    errorbar(dosesGy, autoDose(i,:,3), err_autoDose(i,:,3), 'b.');
+    wtAvg = sum(autoDose(i,:,:)./(err_autoDose(i,:,:)).^2,3) ./ sum(1./(err_autoDose(i,:,:)).^2,3);
+    d_wtAvg = (sum(1./(err_autoDose(i,:,:)).^2,3)).^(-0.5);
+    errorbar(dosesGy, wtAvg, d_wtAvg, 'mo');
+    axis([0 15 0 20]);
+    title(filmOrder{i});
+    grid on
 end
-toc
+%Usar función [D, errD] = getChannelDoseT1_wErrors(CoefX, PVX, dCoefX, dPVX)
 
 
+%% Prueba final con getDoseMicke
+MickeDoses = nan(filmsPerSample, Nsamples);
+stdMickeDoses = nan(filmsPerSample, Nsamples);
+deltas = -0.05:0.001:0.05;
+for i=1:filmsPerSample
+    %loadFileName = ['CoefFitMedicina_' filmOrder{i} '.mat'];
+        loadFileName = ['fitCoef_HF_' filmOrder{i} '.mat'];
 
-
+    load(loadFileName);    
+    for j=1:Nsamples
+        % por aqui
+        dose = getDoseMicke_simple(imageSubsets{i, j}, CoefR1, CoefG1, CoefB1, deltas, maxBits);
+        MickeDoses(i,j) = mean2(dose);
+        stdMickeDoses(i,j) = std2(dose);
+    end
+    
+    subplot(1,2,i);
+    plot(dosesGy, dosesGy, 'k-');
+    hold on
+    errorbar(dosesGy, wtAvg, d_wtAvg, 'mo');
+    errorbar(dosesGy, MickeDoses(i,:), stdMickeDoses(i,:), 'cx');    
+    axis([0 15 0 20]);
+    title(filmOrder{i});
+    grid on
+end
 
