@@ -145,8 +145,7 @@ classdef CartesianGrid2D < matlab.mixin.Copyable
             
         end % constructor
                         
-        % rebin(newdx, newdy) has same size but different dx dy
-        
+        % rebin(newdx, newdy) has same size but different dx dy        
         function rebin(this,newdx,newdy)
             validateattributes(newdx, {'numeric'}, {'positive','real'}, 'CartesianGrid2D.rebin', 'newdx', 1);             
             validateattributes(newdy, {'numeric'}, {'positive','real'}, 'CartesianGrid2D.rebin', 'newdy', 2);             
@@ -160,10 +159,7 @@ classdef CartesianGrid2D < matlab.mixin.Copyable
             
             Xpositions = 0.5 * (XposB(1:(end-1)) + XposB(2:end));
             Ypositions = 0.5 * (YposB(1:(end-1)) + YposB(2:end));
-                        
-            %Xpositions = this.minX:newdx:this.maxX;
-            %Ypositions = this.minY:newdy:this.maxY;
-            
+                                   
             dataType = class(this.data);
             GI = griddedInterpolant({this.minX:this.dx:this.maxX, ...
                 this.minY:this.dy:this.maxY},double(this.data),'linear','none');
@@ -180,7 +176,8 @@ classdef CartesianGrid2D < matlab.mixin.Copyable
             
             this.passMinMaxTests;                        
         end % rebin
-                
+         
+        % shift(shiftVector) shifts all coordinates by a given vector
         function shift(this, shiftVector)
             this.minX = this.minX + shiftVector(1);
             this.maxX = this.maxX + shiftVector(1);
@@ -188,8 +185,7 @@ classdef CartesianGrid2D < matlab.mixin.Copyable
             this.maxY = this.maxY + shiftVector(2);           
         end
        
-        % resize(newSize) has size newSize ([cropping]) and original dx dy.
-        
+        % resize(newSize) has size newSize ([cropping]) and original dx dy.        
         function resize(this,newSize)
             validateattributes(newSize, {'numeric'}, {'nonnan','real','numel',4}, 'CartesianGrid2D.crop', 'newSize', 1);             
             Xpositions = newSize(1):this.dx:newSize(2);
@@ -269,7 +265,6 @@ classdef CartesianGrid2D < matlab.mixin.Copyable
         % Plot a single slice
         function plotSlice(this)
             slice = this.data;
-            % TODO: Test
             imagesc(this.getAxisValues('X'),fliplr(this.getAxisValues('Y')),rot90(slice));
             
             set(gca,'xlim',[this.minX-this.dx/2 this.maxX+this.dx/2]);
@@ -403,11 +398,6 @@ classdef CartesianGrid2D < matlab.mixin.Copyable
            
         % Plot a 1D linear plot
         function plotLinear(this, freeAxis, value, format)
-%            if nargin>5
-%                validateattributes(format, {''}, {}, 'ResultGrids.plotLinear', 'format', 5);              
-%            else
-%                format='b';
-%            end
             % Obtain indexes
             [linData, positions] = this.getLinear(freeAxis, value);
             if nargin==3 || isempty(format) 
