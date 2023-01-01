@@ -40,7 +40,6 @@
 %  axisValues = getAxisValues(axis) --> Returns vector of axis positions
 %  I = getXindex(X)
 %  J = getYindex(Y)
-
 %  X = getXvalue(I)
 %  Y = getYvalue(J)
 %  plotLinear(freeAxis, value, format) --> Create linear plot
@@ -54,16 +53,13 @@
 %  unary minus --> -CG
 %  indexing --> CG(i,j) => CG.data(i,j);
 %
-% FoCa: Forward Dose and LET Calculation tool for proton radiotherapy
+% Originally implemented in FoCa: Forward Dose and LET Calculation tool for proton radiotherapy
 % D Sanchez-Parcerisa et al 2014 Phys. Med. Biol. 59 7341 doi:10.1088/0031-9155/59/23/7341
 %
-% Copyright (C) 2012-2015
+% Copyright (C) 2012-2022
 % Author: Daniel Sanchez-Parcerisa
-% Principal Investigator: Alejandro Carabe-Fernandez
-% Contributors: Mark Kondrla, Chris Wang, Alex Shaindlin.
-% University of Pennsylvania. All Rights Reserved.
 %
-% Contact details: daniel.sanchez.parcerisa@gmail.com, a.carabe@uphs.upenn.edu
+% Contact details: dsparcerisa@ucm.es
 
 classdef CartesianGrid2D < matlab.mixin.Copyable
     %CARTESIANGRID Auxiliary class to store cartesian objects with spacial coordinates
@@ -179,6 +175,7 @@ classdef CartesianGrid2D < matlab.mixin.Copyable
          
         % shift(shiftVector) shifts all coordinates by a given vector
         function shift(this, shiftVector)
+            validateattributes(shiftVector, {'single','double'}, {'nonnan','real','numel',2}, 'CartesianGrid2D.shift', 'shiftVector', 1);
             this.minX = this.minX + shiftVector(1);
             this.maxX = this.maxX + shiftVector(1);
             this.minY = this.minY + shiftVector(2);
@@ -187,7 +184,7 @@ classdef CartesianGrid2D < matlab.mixin.Copyable
        
         % resize(newSize) has size newSize ([cropping]) and original dx dy.        
         function resize(this,newSize)
-            validateattributes(newSize, {'numeric'}, {'nonnan','real','numel',4}, 'CartesianGrid2D.crop', 'newSize', 1);             
+            validateattributes(newSize, {'numeric'}, {'nonnan','real','numel',4}, 'CartesianGrid2D.resize', 'newSize', 1);             
             Xpositions = newSize(1):this.dx:newSize(2);
             Ypositions = newSize(3):this.dy:newSize(4);
             dataType = class(this.data);
@@ -299,6 +296,8 @@ classdef CartesianGrid2D < matlab.mixin.Copyable
         
         % Position in bounds
         function res = posInBounds(this, x, y)
+            validateattributes(x, {'numeric'}, {'real'}, 'CartesianGrid2D.posInBounds', 'x', 1);             
+            validateattributes(y, {'numeric'}, {'real'}, 'CartesianGrid2D.posInBounds', 'y', 2);                  
             res = x>(this.minX - this.dx/2) & ...
                   x<(this.maxX + this.dx/2) & ...
                   y>(this.minY - this.dy/2) & ...
@@ -307,12 +306,15 @@ classdef CartesianGrid2D < matlab.mixin.Copyable
         
         % Index in bounds
         function res = indexInBounds(this, i, j)
+            validateattributes(i, {'numeric'}, {'integer'}, 'CartesianGrid2D.indexInBounds', 'x', 1);
+            validateattributes(j, {'numeric'}, {'integer'}, 'CartesianGrid2D.indexInBounds', 'y', 2);
             res = i>=1 & j>=1 & i<=this.NX & j<=this.NY;
         end % indexInBounds
                                
         % Get subset
         function subCG = getSubset(this, cropping)
-            
+            validateattributes(cropping, {'numeric'}, {'nonnan','real','numel',4}, 'CartesianGrid2D.getSubset', 'cropping', 1);
+                    
             minX = double(max(this.minX,double(cropping(1))));
             minY = double(max(this.minY,double(cropping(3))));
             maxX = double(min(this.maxX,double(cropping(2))));
