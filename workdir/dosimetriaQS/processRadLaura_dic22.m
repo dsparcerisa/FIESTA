@@ -16,7 +16,7 @@ close all
 imshow(I);
 
 %% Base processing data
-deltas = -0.05:0.001:0.05; %-0.02:0.001:0.02;
+deltas = -0.02:0.001:0.02;
 load('/Users/dani/FIESTA/workdir/calibracionRC_nuevo/fitCoef_FQS_EBT3.mat')
 
 [dose, varMat, dr, dg, db] = getDoseMicke(double(I), CoefR1, CoefG1, CoefB1, pixCM, deltas, maxBits);
@@ -61,11 +61,12 @@ caxis([-1 12]);
 title('Blue Channel');
 colorbar
 subplot(2,2,4);
-histogram(dose.data(:));
+histogram(dose.data(:),'EdgeColor',[0 0 0]);
 hold on
-histogram(dr(:));
-histogram(dg(:));
-histogram(db(:));
+histogram(dr(:),'EdgeColor',[1 0 0]);
+histogram(dg(:),'EdgeColor',[0 1 0]);
+histogram(db(:),'EdgeColor',[0 0 1]);
+histogram(dose.data(:),'EdgeColor',[0 0 0]);
 title('Histogram');
 
 mean(dose.data(:))

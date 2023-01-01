@@ -42,7 +42,7 @@ realDB = correctedDB(pvB,delta0);
 
 % Y luego teniéndolos en cuenta
 isR = double(realDG<10 & realDR<10);
-isB = 0.0*double(realDG>2 & realDB>2); % Nunca usar DB
+isB = double(realDG>2 & realDB>2); % Nunca usar DB
 
 for k = 1:numel(delta)
     dev = isR.*(correctedDR(pvR,delta(k))-correctedDG(pvG,delta(k))).^2 + ...
