@@ -1,5 +1,6 @@
 function emptyCG2D = createEmptyCG2D(dxy, sizeX, sizeY)
-% CG2D emptyCG2D = createEmptyCG2D(double dxy, double sizeX, double sizeY)
+% CartesianGrid2D emptyCG2D = createEmptyCG2D(double dxy, double sizeX, double sizeY)
+% Creates an empty CartesianGrid2D object with specified sizes in cm
 NX = round(sizeX/dxy);
 NY = round(sizeY/dxy);
 maxX = (NX*dxy/2) - dxy/2;
