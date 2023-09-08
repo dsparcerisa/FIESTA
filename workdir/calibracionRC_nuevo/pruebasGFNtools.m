@@ -66,28 +66,29 @@ end
 subplot(3,1,1);
 % FIT 1
 % En rojo
-D_1_R = getChannelDoseT1(CoefR1, R);
-dD_1_R = max(getChannelDoseT1(CoefR1, R-dR) - D_1_R, D_1_R - getChannelDoseT1(CoefR1, R+dR));
+[D_1_R, dD_1_R] = getChannelDoseT1_wErrors(CoefR1, R, dCoefR1, dR)
+
 % En verde
-D_1_G = getChannelDoseT1(CoefG1, G);
-dD_1_G = max(getChannelDoseT1(CoefG1, G-dG) - D_1_G, D_1_G - getChannelDoseT1(CoefG1, G+dG));
+[D_1_G, dD_1_G] = getChannelDoseT1_wErrors(CoefG1, G, dCoefG1, dG)
+
 % En azul
-D_1_B = getChannelDoseT1(CoefB1, B);
-dD_1_B = max(getChannelDoseT1(CoefB1, B-dB) - D_1_B, D_1_B - getChannelDoseT1(CoefB1, B+dB));
-% errorbar(dosesGy,D_1_R,dD_1_R,'r.'); hold on
-% errorbar(dosesGy,D_1_G,dD_1_G,'g.');
-% errorbar(dosesGy,D_1_B,dD_1_B,'b.');
+[D_1_B, dD_1_B] = getChannelDoseT1_wErrors(CoefB1, B, dCoefB1, dB)
+
+errorbar(dosesGy,D_1_R,dD_1_R,'r.'); hold on
+errorbar(dosesGy,D_1_G,dD_1_G,'g.');
+errorbar(dosesGy,D_1_B,dD_1_B,'b.');
+
 D_1 = (D_1_R ./ dD_1_R.^2 +  D_1_G ./ dD_1_G.^2 +  D_1_B ./ dD_1_B.^2) ...
     ./ (1 ./ dD_1_R.^2 +  1 ./ dD_1_G.^2 +  1 ./ dD_1_B.^2);
 dD_1 = (1 ./ dD_1_R.^2 +  1 ./ dD_1_G.^2 +  1 ./ dD_1_B.^2).^(-0.5);
-hold off
-errorbar(dosesGy,D_1,dD_1,'r.'); hold on
-plot(dosePoints,dosePoints,'k:');
+
+errorbar(dosesGy,D_1,dD_1,'k.'); hold on
+plot(dosePoints,dosePoints,'y:');
 grid on
 axis([0 round(max(dosesGy)) 0 round(max(dosesGy))]);
 residue_1 = rssq(D_1-dosesGy)
 residue_1b = rssq(D_1(1:end-1)-dosesGy(1:end-1))
-
+%%
 % FIT 2
 % En rojo
 D_2_R = getChannelDoseT2(CoefR2, R);

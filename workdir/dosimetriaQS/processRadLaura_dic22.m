@@ -1,6 +1,7 @@
 clear all; close all
 addpath '/Users/dani/FIESTA/workdir/calibracionRC_nuevo'
 addpath '/Users/dani/FIESTA/workdir/quenchingStudy'
+addpath '/Users/dani/FIESTA/filmDosimetry'
 basePath = '/Users/dani/OneDrive - Universidad Complutense de Madrid (UCM)/UCM/01-Proyectos/40-TFG Laura/Escaneos/22_12_22';
 fullPath = [basePath filesep '1Escaner2.tif'];
 I  = imread(fullPath);
